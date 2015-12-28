@@ -69,7 +69,7 @@ kirbytext::$tags['imagey'] = array(
         $detail = str_replace('by','<em>by</em>',$detail);
         $detail = str_replace('from','<em>from</em>',$detail);
 
-        $print .= '<div class="imagetextboxdetail margin" style="margin-top">'.$detail.'</div>';
+        $print .= '<div class="imagetextboxdetail margin">'.$detail.'</div>';
     endif;
 
     $print .= '</div>';
