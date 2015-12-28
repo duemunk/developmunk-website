@@ -1,3 +1,16 @@
+/*body {
+	background-image: url('../../assets/images/grid.png');
+	background-position: center top;
+}
+.projectimage {
+		opacity: 0.8;
+}
+* {
+	background-color: rgba(255,0,255,0.1) !important;
+}*/
+
+
+
 /*
 black #231f20 rgb(35,31,32)
 white #f3f1f1 rgb(243,241,241)
@@ -195,12 +208,17 @@ header#main svg
 
 
 
-
-
-
-.headerimagediv {
+.headerimage {
   height: 300px;
-  margin-bottom: -60px;
+  margin-bottom: -80px;
+}
+
+.headerimage:before {
+	content: '';
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	background-color: rgba(243,241,241,0.5);
+	background: linear-gradient(to bottom, rgba(243,241,241,0) 40%, rgba(243,241,241,0.1) 60%, rgba(243,241,241,0.4) 80%, #f3f1f1 100%);
 }
 
 .coverbackground,
@@ -260,19 +278,10 @@ h1,
   position: relative; /* Avoid elements after but with negative margin is shown above */
 }
 
-.full {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom:0;
-  right: 0;
-}
-
-
 
 p {
 	display: block;
-	padding-top: 20px;
+	padding-top: 10px;
 	padding-bottom: 20px;
 	text-align: justify;
 }
@@ -291,7 +300,7 @@ h2 {
 }
 
 h1 {
-	padding: 15px 0 41px;
+	padding: 15px 0 1px;
 	text-align: center;
 }
 h1 a,
@@ -335,7 +344,7 @@ a:link { /* unvisited link */
 	color:#3B8298;
 }
 a:visited { /* visited link */
-    color: #788;
+  color:#3B8298;
 }
 a:hover { /* mouse over link - must be enabled when webkit gradient is on */
 	color:#55C2DB;
@@ -476,6 +485,15 @@ a.blogpiece {
   height: 500px;
   min-height: 200px;
 }
+
+.projectimage:before {
+	content: '';
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	background-color: rgba(243,241,241,0.5);
+  background: linear-gradient(to bottom, rgba(243,241,241,0) 66%, #f3f1f1 100%);
+}
+
 .project-text-content-wrapper {
   position: absolute;
   bottom: 0;
@@ -487,7 +505,7 @@ a.blogpiece {
 }
 .project-text-content {
   text-shadow: 0 0 10px #f3f1f1;
-  margin-top: -100px !important;
+  margin-top: -79px !important;
 }
 
 
@@ -550,23 +568,6 @@ header.frontpage .leader {
   flex-grow: 0;
 }
 
-/*
-header.frontpage .leader::after {
-    border-color: transparent;
-    border-top-color: #231f20;
-    border-top-color: rgba(35,31,32,0.2);
-    border-style: solid;
-    border-width: 8px;
-    border-bottom-width: 0;
-    content: ' ';
-    display: block;
-    height: 0;
-    left: 50%;
-    margin-left: -8px;
-    position: absolute;
-    width: 0;
-}
-*/
 
 .tri-down {
   /* Styling block element, not required */
@@ -753,6 +754,8 @@ nav#menu svg.logo {
 }
 
 
+
+
 /* Footer */
 div#biz {
 	position: relative;
@@ -760,11 +763,28 @@ div#biz {
 	margin: 0;
 	padding: 0;
 	font-size: 62.5%;
+	color: #231f20;
+}
+div#biz.inverted {
 	color: #f3f1f1;
 }
 
-.footerimagediv {
+.footerimage {
   height: 500px;
+}
+.footerimage:before {
+	content: '';
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	background-color: rgba(243,241,241,0.5);
+  background: linear-gradient(to bottom, #f3f1f1 0%, rgba(243,241,241,0.5) 100%);
+}
+.footer:before {
+	content: '';
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	background-color: #e14b2b;
+	background: linear-gradient(to bottom, #f3f1f1 0%,rgba(227,74,32,0.8) 50%,#af3b25 100%);
 }
 footer svg.logo {
   height: 95px;
@@ -786,11 +806,19 @@ div#biz ul li {
 	text-align: right;
 }
 div#biz ul li a{
-	color: #f3f1f1;
+	color: #231f20;
 	text-decoration:none;
 }
+div#biz.inverted ul li a {
+	color: #f3f1f1;
+}
 div#biz ul li a:hover {
-	color: rgba(243,241,241,0.8);
+	color: #000;
+	text-shadow: 0 0 6px #f3f1f1;
+}
+div#biz.inverted ul li a:hover {
+	color: #fff;
+	text-shadow: 0 0 4px #af3b25;
 }
 
 
@@ -864,7 +892,7 @@ div#biz ul li a:hover {
     margin: 0 auto;
 		width: 800px;
   }
-  .headerimagediv {
+  .headerimage {
     height: 500px;
   }
   .smallmarginonlarge {
@@ -1083,6 +1111,12 @@ div.imagedescriptionwrapper .imagedescription {
   background: -o-linear-gradient(top,#ff 0%,#f3f1f1 100%);
   background: -ms-linear-gradient(top,rgba(243,241,241,0) 0%,#f3f1f1 100%);
   background: linear-gradient(to bottom,rgba(243,241,241,0) 0%,#f3f1f1 100%);
+}
+.lightgradtop {
+	background-color: rgba(243,241,241,0.5);
+  background: -moz-linear-gradient(top, #f3f1f1 0%, rgba(243,241,241,0) 100%);
+  background: -webkit-linear-gradient(top, #f3f1f1 0%, rgba(243,241,241,0) 100%);
+  background: linear-gradient(to bottom, #f3f1f1 0%, rgba(243,241,241,0) 100%);
 }
 
 .lighttransparent2redgrad {

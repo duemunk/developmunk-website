@@ -3,8 +3,7 @@
 <header>
 
   <? if($image = $page->images()->sortBy('sort', 'asc')->first()): ?>
-  <div class="coverbackground fullwrapper headerimagediv" style="background: url(<?php echo $image->url() ?>);">
-    <div class="lightgradbottomthird full"></div>
+  <div class="coverbackground fullwrapper headerimage" style="background: url(<?php echo $image->url() ?>);">
   </div>
   <? endif; ?>
 

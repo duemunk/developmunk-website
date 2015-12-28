@@ -129,7 +129,7 @@ h17.156c1.1,0,1.363-0.637,0.586-1.414L91.415,65.258z"/>';
 
 <div class="logo">
 
-  <?php if ($link) : echo '<a class="logo" href="'.url('').'">'; endif; ?>
+  <?php if ($link) : echo '<a class="logo" href="">'; endif; ?>
 
     <!-- /* x="0px" y="0px" width="'.$width.'px" height="'.$height.'px" */ -->
   <svg class="logo" version="1.1" viewBox="0 0 <?php echo $width ?> <?php echo $height?>">
@@ -138,7 +138,7 @@ h17.156c1.1,0,1.363-0.637,0.586-1.414L91.415,65.258z"/>';
               <stop class="logoGradStart" offset="0" stop-color="<?php echo $start ?>"/>
               <stop class="logoGradStop" offset="1" stop-color="<?php echo $stop ?>"/>
           </linearGradient>
-          <?php echo $logopath ?>;
+          <?php echo $logopath ?>
       </g>
       <g class="logoname">
           <?php echo $logonamepaths ?>

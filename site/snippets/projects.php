@@ -7,9 +7,7 @@
       <div class="project">
         <?php if($image = $project->images()->sortBy('sort', 'asc')->first()): ?>
           <a href="<?php echo $project->url() ?>">
-            <div class="projectimage protectbackgroundsidesbottom fullwrapper" style="background-image: url('<?php echo $image->url() ?>');" alt="<?php echo $project->title()->html() ?>">
-              <div class="lightgradbottomhalf full"></div>
-            </div>
+            <div class="projectimage protectbackgroundsidesbottom fullwrapper" style="background-image: url('<?php echo $image->url() ?>');" alt="<?php echo $project->title()->html() ?>"></div>
           </a>
         <?php endif ?>
         <div class="margin project-text-content">
