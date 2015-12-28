@@ -2,12 +2,19 @@
 	background-image: url('../../assets/images/grid.png');
 	background-position: center top;
 }
-.projectimage {
-		opacity: 0.8;
+.projectimage, .headerimage {
+		opacity: 0.5;
 }
 * {
 	background-color: rgba(255,0,255,0.1) !important;
+}
+h1 {
+	background-color: rgba(255,255,0,0.2) !important;
+}
+p {
+	background-color: rgba(0,255,255,0.1) !important;
 }*/
+
 
 
 
@@ -65,7 +72,7 @@ h4,
 h5,
 h6 {
 	clear: both;
-    font-weight: 400;
+  font-weight: 400;
 }
 html {
 	overflow-y: scroll;
@@ -189,8 +196,7 @@ body {
 	background: none !important;
 }
 
-.list
-{
+.list {
   display: block;
 }
 
@@ -199,8 +205,7 @@ header#main {
 	line-height: 0; /* To have correct height calculation of containing div */
 	width: 100%; /* To make center work correctly on iOS */
 }
-header#main svg
-{
+header#main svg {
 	width: 320px;
 	height: 334px;
 }
@@ -210,7 +215,7 @@ header#main svg
 
 .headerimage {
   height: 300px;
-  margin-bottom: -80px;
+  margin-bottom: -3.2rem;
 }
 
 .headerimage:before {
@@ -281,8 +286,8 @@ h1,
 
 p {
 	display: block;
-	padding-top: 10px;
-	padding-bottom: 20px;
+	padding-top: 0.4em;
+	padding-bottom: 1.2em;
 	text-align: justify;
 }
 p.close {
@@ -294,26 +299,27 @@ h2 {
 	font-family:"Titillium Web", sans-serif;
 	font-weight: 400;
 	font-size: 40px;
-	font-size: 1.6rem;
-	line-height: 1.6;
-	letter-spacing:-1.9px; /* Kern titles */
+	font-size: 1.6em;
+	line-height: 1.5;
+	letter-spacing: -1.9px; /* Kern titles */
+	padding: 0.4em 0 0.1em;
 }
 
 h1 {
-	padding: 15px 0 1px;
+
 	text-align: center;
 }
 h1 a,
 h1 a:visited {
   color: #231f20;
 }
-h2 {
-	padding: 35px 0 20px;
+h3 {
+  padding-top: 0.6em;
+  padding-bottom: 0.2em;
 }
-h3,
 h4 {
-  padding-top: 20px;
-  margin-bottom: -24px;
+  padding-top: 0.4em;
+  margin-bottom: -0.4em !important;
 }
 h3 {
   font-weight: 700;
@@ -322,16 +328,8 @@ h4 {
   font-style: italic;
 }
 
-body.single h1 {
-  font-size: 64px;
-  font-size: 2.56rem;
-	line-height: 1.6;
-	letter-spacing:-1.9px; /* Kern titles */
-  text-shadow: 0 0 10px #f3f1f1;
-}
-
 div.section {
-	padding-top: 120px;
+	padding-top: 16%;
 }
 
 a {
@@ -352,8 +350,8 @@ a:hover { /* mouse over link - must be enabled when webkit gradient is on */
 
 article ul {
   list-style-type: square;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
 }
 article ul > li {
   color: rgba(35,31,32,0.1);
@@ -395,9 +393,8 @@ nav#menu ul li {
 
 nav#menu ul li a {
   display: block;
-/*    transition: color .1s, background .1s, height .1s, border-width .1s;*/
-
-  padding: 9px 10px 11px;
+    /*transition: color .1s, background .1s, height .1s, border-width .1s;*/
+	padding: 9px 10px 11px;
 }
 nav#menu ul li:last-child a{
   padding-right: 0;
@@ -410,7 +407,7 @@ nav#menu ul li a:visited {
 nav#menu div.logo {
   float: left;
 
-  top: 16px;
+	top: 16px;
   position: relative;
 }
 
@@ -478,11 +475,11 @@ a.blogpiece {
 }
 
 .project {
-  padding-top: 100px;
+	padding-top: 100px;
   padding-bottom: 150px;
 }
 .projectimage {
-  height: 500px;
+	height: 500px;
   min-height: 200px;
 }
 
@@ -505,7 +502,7 @@ a.blogpiece {
 }
 .project-text-content {
   text-shadow: 0 0 10px #f3f1f1;
-  margin-top: -79px !important;
+	margin-top: -3.2rem !important;
 }
 
 
@@ -514,7 +511,8 @@ a.blogpiece {
   font-size: 62.5%;
   text-align: right;
   color: rgba(35,31,32,0.3);
-  padding-top: 11px;
+  padding-top: 0.64em;
+	padding-bottom: 0.32em;
 }
 
 a.linkcontainer {
@@ -529,7 +527,7 @@ a.linkcontainer {
 
 header.frontpage {
   margin: 0 !important;
-  line-height: 1.6 !important;
+  line-height: 1.5 !important;
 }
 
 
@@ -904,7 +902,7 @@ div#biz.inverted ul li a:hover {
 /* Width 600 < and <= 920 */
 @media screen and (min-width: 601px) and (max-width: 920px) {
 	.margin,
-    .marginofflarge {
+  .marginofflarge {
 		margin: 0 60px;
 	}
 }
@@ -926,7 +924,7 @@ div#biz.inverted ul li a:hover {
 		font-size: 110%;
 	}
 	.margin,
-	  .marginofflarge {
+	.marginofflarge {
 		margin: 0 10%; /* 60 / 600 */
 	}
 	header#main svg.logo {
@@ -1028,8 +1026,11 @@ div#biz.inverted ul li a:hover {
   position: relative;
 }
 .quoteinner {
-/*    quotes: "“" "”" "‘" "’";*/
-  font-size: 160%;
+	font-size: 40px;
+	font-size: 1.6em;
+	line-height: 1.5;
+	padding-top: 0.45em;
+	padding-bottom: 0.05em;
 }
 .quoteinner:before {
   content: open-quote;
@@ -1047,7 +1048,8 @@ div#biz.inverted ul li a:hover {
 
 .quote .author {
   text-align: right;
-  margin-top: 40px;
+  margin-top: 1.6em;
+	margin-bottom: 0.05em;
   font-style: normal;
 }
 
