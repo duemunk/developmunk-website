@@ -10,7 +10,7 @@
 
   <?php echo css('assets/css/main.css') ?>
 
-  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js' async></script>
+  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
   <?php echo js('assets/js/main.js') ?>
   <?php echo js('assets/js/jquery.scrollTo-1.4.3.1.js', true) ?>
   <?php echo js('assets/js/snap.svg.js', true) ?>
