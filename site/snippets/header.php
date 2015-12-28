@@ -10,13 +10,10 @@
 
   <?php echo css('assets/css/main.css') ?>
 
-  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+  <link rel="stylesheet" id="googlefonts-css" href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700|Titillium+Web:400,600|Inconsolata&subset=latin" type="text/css" media="all"/>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
   <?php echo js('assets/js/main.js') ?>
-  <?php echo js('assets/js/jquery.scrollTo-1.4.3.1.js', true) ?>
-  <?php echo js('assets/js/snap.svg.js', true) ?>
-
-  <link rel="stylesheet" id="googlefonts-css" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700|Titillium+Web:400,600|Inconsolata&subset=latin" type="text/css" media="all"/>
-
+  <?php echo js('assets/js/jquery.scrollTo.min.js', true) ?>
   <link rel="shortcut icon" type="image/x-icon" href="assets/favicons/favicon.ico"/>
   <link rel="shortcut icon" type="image/png" href="assets/favicons/favicon16.png"/>
   <link rel="shortcut icon" type="image/png" href="assets/favicons/favicon32.png"/>
