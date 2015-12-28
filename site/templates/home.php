@@ -6,7 +6,11 @@
       <div class="margin">Creating no-nonsense user interfaces!</div>
   </div>
   <div class="leader">
-      <div class="margin leaderinner tri-down">See below for some stuff I’ve been working on lately</div>
+      <div class="leaderinner tri-down">
+        <div class="margin">
+          See below for some stuff I’ve been working on lately
+        </div>
+      </div>
   </div>
 </header>
 
