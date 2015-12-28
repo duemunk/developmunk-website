@@ -43,3 +43,8 @@ RewriteRule ^(.*) index.php [L]
 AddDefaultCharset UTF-8
 
 php_flag short_open_tag on
+
+## Redirect developmunk if called as subdomain to brothersinapps.dk
+RewriteCond %{HTTP_HOST} ^developmunk\.brothersinapps\.dk$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.developmunk\.brothersinapps\.dk$
+RewriteRule ^/?$ "http\:\/\/developmunk\.dk" [R=301,L]
