@@ -40,11 +40,21 @@ RewriteRule ^(.*) index.php [L]
 # Additional recommended values
 # Remove comments for those you want to use.
 
-AddDefaultCharset UTF-8
+# AddDefaultCharset UTF-8
+#
+# php_flag short_open_tag on
 
-php_flag short_open_tag on
-
+<IfModule mod_rewrite.c>
 ## Redirect developmunk if called as subdomain to brothersinapps.dk
 RewriteCond %{HTTP_HOST} ^developmunk\.brothersinapps\.dk$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.developmunk\.brothersinapps\.dk$
 RewriteRule ^/?$ "http\:\/\/developmunk\.dk" [R=301,L]
+
+# www. to non www
+RewriteBase /
+RewriteRule ^(([^./]+/)*[^./]+)$ /$1/ [L,R=301]
+RewriteCond %{HTTP_HOST} ^www.developmunk.dk [NC]
+RewriteRule ^(.*)$ http://developmunk.dk/$1 [L,R=301]
+RewriteCond %{THE_REQUEST} ^.*/index.*
+RewriteRule ^(.*)index.*$ http://developmunk.dk [R=301,L]
+</IfModule>
