@@ -1,15 +1,25 @@
-<h2>Latest projects</h2>
 
-<ul class="teaser cf">
-  <?php foreach(page('projects')->children()->visible()->limit(3) as $project): ?>
-  <li>
-    <h3><a href="<?php echo $project->url() ?>"><?php echo $project->title()->html() ?></a></h3>
-    <p><?php echo $project->text()->excerpt(80) ?> <a href="<?php echo $project->url() ?>">read&nbsp;more&nbsp;→</a></p>
-    <?php if($image = $project->images()->sortBy('sort', 'asc')->first()): ?>
-    <a href="<?php echo $project->url() ?>">
-      <img src="<?php echo $image->url() ?>" alt="<?php echo $project->title()->html() ?>" >
-    </a>
-    <?php endif ?>
-  </li>
+<div id="projects">
+
+  <?php foreach(page('projects')->children()->visible()->limit(5) as $project): ?>
+
+    <div class="marginonlarge">
+      <div class="project">
+        <?php if($image = $project->images()->sortBy('sort', 'asc')->first()): ?>
+          <a href="<?php echo $project->url() ?>">
+            <div class="projectimage protectbackgroundsidesbottom fullwrapper" style="background-image: url('<?php echo $image->url() ?>');" alt="<?php echo $project->title()->html() ?>">
+              <div class="lightgradbottomhalf full"></div>
+            </div>
+          </a>
+        <?php endif ?>
+        <div class="margin project-text-content">
+          <h1><?php echo $project->title() ?></h1>
+          <?php echo $project->excerpt()->kt() ?>
+          <p class="center"><?php echo $project->what_i_did() ?></p>
+        </div>
+      </div>
+    </div>
+
   <?php endforeach ?>
-</ul>
+
+</div>

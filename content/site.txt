@@ -1,17 +1,25 @@
-Title: Kirby Starterkit
+Title: developmunk
 
 ----
 
-Author: Bastian Allgeier GmbH
+Author: developmunk
 
 ----
 
-Description: This is Kirby's Starterkit.
+Description: 
 
 ----
 
-Keywords: Kirby, CMS, file-based
+Keywords: 
 
 ----
 
-Copyright: © 2009-(date: Year) (link: http://getkirby.com text: Kirby)
+Copyright: © 2009-(date: Year) (link: https://develpmunk.dk text: developmunk)
+
+----
+
+Piwik-url: stats.developmunk.dk
+
+----
+
+Piwik-id: 1

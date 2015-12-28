@@ -1,0 +1,13 @@
+Title: Chaining syntax in Swift
+
+----
+
+Tags: 
+
+----
+
+Excerpt: 
+
+----
+
+Text: (gist: 4f186467e0fac1924d42 user: duemunk)

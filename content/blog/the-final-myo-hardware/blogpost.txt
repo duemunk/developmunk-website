@@ -1,0 +1,13 @@
+Title: The Final Myo Hardware
+
+----
+
+Tags: 
+
+----
+
+Excerpt: 
+
+----
+
+Text: (quote: In the early days it will be application specific. You will put it on to control a presentation or play a game. We are not yet at the point where you are going to be wearing it around all day. At some point in the future we might get there, as more and more applications emerge and we start getting into integration with smart home technology and other connected things around you. It’s not a fitness tracker. It’s not something you need to wear all day. It’s content specific. author: Stephen Lake to mobile syrup url: http://mobilesyrup.com/2014/07/25/all-arms-on-deck-hands-on-with-the-production-ready-myo-gesture-band)

@@ -1,33 +1,22 @@
 <?php snippet('header') ?>
 
-  <main class="main" role="main">
+  <header>
 
-    <h1><?php echo $page->title()->html() ?></h1>
-
-    <ul class="meta cf">
-      <li><b>Year:</b> <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('Y', 'year') ?></time></li>
-      <li><b>Tags:</b> <?php echo $page->tags() ?></li>
-    </ul>
-
-    <div class="text">
-      <?php echo $page->text()->kirbytext() ?>
-
-      <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
-      <figure>
-        <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
-      </figure>
-      <?php endforeach ?>
+    <? if($image = $page->images()->sortBy('sort', 'asc')->first()): ?>
+    <div class="coverbackground fullwrapper headerimagediv" style="background: url(<?php echo $image->url() ?>);">
+      <div class="lightgradbottomthird full"></div>
     </div>
+    <? endif; ?>
 
-    <nav class="nextprev cf" role="navigation">
-      <?php if($prev = $page->prevVisible()): ?>
-      <a class="prev" href="<?php echo $prev->url() ?>">&larr; previous</a>
-      <?php endif ?>
-      <?php if($next = $page->nextVisible()): ?>
-      <a class="next" href="<?php echo $next->url() ?>">next &rarr;</a>
-      <?php endif ?>
-    </nav>
+      <h1 class="margin"><a href="http://developmunk.dk/blog/developing-for-the-myo-alpha/" rel="bookmark"><?php echo $page->title()->html() ?></a></h1>
+  </header>
 
-  </main>
+  <section id="content">
+    <article>
+      <?php echo $page->text()->kirbytext() ?>
+    </article>
+  </section>
 
-<?php snippet('footer') ?>
+  <? snippet('pagenavigation') ?>
+
+<? snippet('footer') ?>

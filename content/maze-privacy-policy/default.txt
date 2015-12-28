@@ -1,0 +1,29 @@
+Title: Maze – Privacy Policy
+
+----
+
+Text: 
+
+<div class="margin section">
+<h3>Information</h3>
+<ul>
+<li><span>This app transmits no data about the user,</span></li>
+<li><span>it requires no personal information,</span></li>
+<li><span>it does not ask for any personal information,</span></li>
+<li><span>it does not collect any information about the user,</span></li>
+<li><span>and it does not require any registration.</span></li>
+</ul>
+
+<h3>Mandatory and Optional Data</h3>
+<p>
+No data is mandatory to use this application. It will function even without an Internet connection.
+</p>
+
+<h3>Sharing of Information</h3>
+<p>Data is not shared.</p>
+
+<h3>Your Consent</h3>
+<p>
+By using the Application, you are consenting to our processing of your information as set forth in this Privacy Policy now and as amended by us. "Processing,” means using cookies on a computer/hand held device or using or touching information in any way, including, but not limited to, collecting, storing, deleting, using, combining and disclosing information.
+</p>
+</div>

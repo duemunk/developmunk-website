@@ -18,3 +18,9 @@ fields:
   copyright:
     label: Copyright
     type:  textarea
+  piwik_url:
+    label: Piwik URL
+    type: text
+  piwik_id:
+    label: Piwik ID
+    type: number

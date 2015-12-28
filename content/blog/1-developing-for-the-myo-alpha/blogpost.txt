@@ -1,0 +1,65 @@
+Title: Developing for the Myo Alpha
+
+----
+
+Header: arm_and_signal.jpg
+
+----
+
+Text: 
+
+<p class="margin">I'm one of the lucky developers who has received an alpha version of the Myo by Thalmic Labs. This post is going to be a developers initial take on what the Myo armband is and what it can be used for.</p>
+<p class="margin">The easiest way to give you an idea of what the Myo is, is by showing you a concept video:</p>
+(youtubey: oWu9TFJjHaM)
+<p class="margin">It's awesome right? It is made by a Canadian startup – <a title="Thalmic Labs" href="http://thalmic.com">Thalmic Labs</a>. Basically the Myo is an armband that allows you to control digital devices with hand gestures and poses. So what are its uses cases? In the words of co-founder and CEO of Thalmic Labs:</p>
+(quote: As we move towards this era of wearable devices — of new computers and new technologies that you can actually interact with on the go — this is the interface for that. author: Stephen Lake)
+<p class="margin">Of course there are other competing input devices for such use cases, the smartphone being one of them. But you have to take your smartphone out of your pocket or find it between the couch pillows. Maybe even wash your hands if you're working with something dirty or work in a clean/sterile environment (medic). Also other interfaces have been gaining more traction in recent years, like speech recognition (Google Now, Siri) and motion detection (Nintendo Wii, Microsoft Kinect, Leap Motion).</p>
+<p class="margin">And here comes the Myo. No buttons, no cameras, no microphones. In my opinion that has two primary benefits over these other modern input technologies.</p>
+<ul class="margin">
+<li><span>Less reliant on surroundings – visual or audio.</span></li>
+<li><span>Completely mobile, no external or stationary tech, only worn.</span></li>
+</ul>
+<p class="margin">This makes it a perfect device for controlling your Go Pro camera, home automation with lighting and heating, electric kids toys, or to combine with an Oculus Rift to super-charge gaming.</p>
+(imagey: myo-counterstrike.jpg title: Controlling games could be more intuitive and life-like with the Myo detail: from Thalmic Labs’ press kit marginonlarge: false)
+
+<h2 class="margin">Myo Alpha</h2>
+<p class="margin">So, this might very well be the way that we're going to interact with the next generation devices. But what can the device actually do – and does it work? The Myo hasn't been released yet, but I've to received an alpha unit as well as a preliminary SDK.</p>
+<h3 class="margin">Wireless</h3>
+<p class="margin">The Myo is connected to devices using the broadly adopted Bluetooth 4.0. This allows for connecting the Myo to nearly any type of electric device, only requiring that they have a small Bluetooth communications unit.</p>
+<h3 class="margin">C Framework</h3>
+<p class="margin">The device that is controlled must run the Myo framework, and implement how the Myo should interact with it. Thalmic Labs are planning to provide SDKs for a multitude of platforms, but the underlying framework is written in C, so the limits are few. Currently they only support a set of platforms, and I've been working with the SDK for iOS devices.</p>
+<h3 class="margin">Hand Poses and Motion</h3>
+<p class="margin">The data provided through the SDK are hand poses and arm motion data.</p>
+<ul class="margin">
+<li><span>Poses – e.g. fist, finger spread etc.</span></li>
+<li><span>Motion data – accelerometer, gyroscope, magnetometer (compass).</span></li>
+</ul>
+(imagey:  arm_and_signal.jpg relative:true title: The Myo uses electric activity in your forearm to detect hand poses detail: from Thalmic Labs’ press kit marginonlarge: false)
+
+<h4 class="margin">Poses from muscles in forearm</h4>
+<p class="margin">The Myo uses sensors to detect electric signals in your forearm to recognize the different hand poses. This is done on the Myo itself, and the detected pose is then transmitted to the connected device, telling whether or not a pose is currently being performed by the user. <span class="dim">The number of supported poses hasn't been released yet.</span></br>
+Even though the current SDK provided to alpha developers isn't finished yet, I can say with great confidence that the poses are recognized at an impressively low latency, and considering this isn't the final version, with relatively high precision.
+</p>
+<h4 class="margin">Raw motion data</h4>
+<p class="margin">The motion data is a bit more elaborate than the pose data. It is very similar to what is available from smartphones, i.e. motion data in three dimensions at a high rate; enough to determine the Myos position in space in real-time and at a high precision. Since the Myo is positioned on the forearm, the motion relates to arm movement whereas the poses relate to finger movement.</p>
+<h3 class="margin">Very light</h3>
+<p class="margin">The Myo Alpha that I've been testing and using isn't identical to the final version, so it doesn't make much sense to comment on much of the current mechanical design. Though one thing is certain – this device is surprisingly light. It'll definitely not be something that will slow you down.</p>
+(imagey: Alpha_kit_black.jpg title: Alpha kit detail: by Tobias Due Munk marginonlarge: false)
+
+<h3 class="margin">The "Kit"</h3>
+<p class="margin">The Alpha kit it self is really nice and simple – just as the Myo it self. It came with a Myo Alpha unit, a nonproprietary(!) micro-USB cable, USB Bluetooth dongle, a welcome note, a geeky T-shirt, and a small code snippet inside the lid to get you started.</p>
+<h3 class="margin">—</h3>
+<p class="margin">Well, you're convinced now aren't you? Just head over <a href="https://www.thalmic.com/en/myo/preorder/" title="Preorder a Myo by Thalmic Labs">here</a> and preorder one if you haven't already! </br>If you're a developer, head over to the <a href="https://developer.thalmic.com/forums/">forums</a> for more information. The Thalmicians are quite active, informative, and let's not forget – friendly!</p>
+<p class="margin">I've barely scratched the surface of what the Myo is capable of, but stick around for more as I keep digging into what the Myo can be used for. I especially find the use of the Myo as an assistive or rehabilitative device promising.</p>
+
+<!--<p>For more reading on here are some great links</p>
+<div class="center"><a class="list" title="Myo least edgy black armband ever" href="http://mouseextinction.com/2013/myo-least-edgy-black-armband-ever/">Myo least edgy black armband ever</a> <a class="list" title="The real Tony Stark – Interview with Thalmic Labs Stephen Lake" href="http://www.moneymakermagazine.co.uk/the-real-tony-stark-interview-with-thalmic-labs-ceo-stephen-lake/">The real Tony Stark</a> <a class="list" title="A list of press mentions of Thalmic Labs" href="https://www.thalmic.com/press/">Press mentions of Thalmic Labs</a>
+</div>-->
+
+----
+
+Tags: MYO,Thalmic Labs,Alpha
+
+----
+
+Excerpt: I'm one of the lucky developers who has received an alpha version of the Myo by Thalmic Labs. This post is going to be a developers initial take on what the Myo armband is and what it can be used for.

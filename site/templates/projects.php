@@ -7,8 +7,6 @@
       <?php echo $page->text()->kirbytext() ?>
     </div>
 
-    <hr>
-
     <?php snippet('projects') ?>
 
   </main>

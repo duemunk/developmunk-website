@@ -1,0 +1,27 @@
+Title: Kiteboarding Exercises
+
+----
+
+Year: 2013
+
+----
+
+Text: <p class="margin">An (link: http://appstore.com/kiteboardingexercises text: iPhone+iPad app) created for offline access for great exercise programs for Kiteboarders created by Lars Jørgensen at (link: http://www.kiteboardingexercises.com text: kiteboardingexcercises.com).</p>
+
+----
+
+Tags: 
+
+iOS,App
+
+---
+
+What-I-Did: Interface + coding
+
+----
+
+Excerpt: An (link: http://appstore.com/kiteboardingexercises text: iPhone+iPad app) created for offline access for great exercise programs for Kiteboarders created by Lars Jørgensen at (link: http://www.kiteboardingexercises.com text: kiteboardingexcercises.com).
+
+----
+
+What-i-did: 

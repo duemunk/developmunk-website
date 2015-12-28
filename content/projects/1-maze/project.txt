@@ -1,0 +1,21 @@
+Title: Maze
+
+----
+
+Year: 2015
+
+----
+
+Tags: game
+
+----
+
+Text: <p class="margin">(link: https://itunes.apple.com/app/id1043466894 text: Maze) is an addictive arcade game for Apple TV, iPhone and iPad with simple game play, bold graphics and a rich soundscape. Every second the gamer gets a glimpse of the correct path to go, leaving them to cycle through the stages of observing, memorising, and moving along the trail. Here’s a (link: https://www.dropbox.com/sh/76o00s9k035kme9/AAArPI5NzkTaA_95TYqklfbsa?dl=0 text: Press Kit).</p>
+
+----
+
+What-i-did: Interface + graphics + audio + coding
+
+----
+
+Excerpt: (link: https://itunes.apple.com/app/id1043466894 text: Maze) is an addictive arcade game for Apple TV, iPhone and iPad with simple game play, bold graphics and a rich soundscape. Every second the gamer gets a glimpse of the correct path to go, leaving them to cycle through the stages of observing, memorising, and moving along the trail. Here’s a (link: https://www.dropbox.com/sh/76o00s9k035kme9/AAArPI5NzkTaA_95TYqklfbsa?dl=0 text: Press Kit).
