@@ -1,9 +1,6 @@
 <?php snippet('header') ?>
-
   <main>
-
     <?php foreach($page->children()->visible() as $blogpost): ?>
-
       <div class="marginonlarge">
         <div class="project">
           <?php if($image = $blogpost->images()->sortBy('sort', 'asc')->first()): ?>
@@ -17,9 +14,6 @@
           </div>
         </div>
       </div>
-
     <?php endforeach ?>
-
   </main>
-
 <?php snippet('footer') ?>

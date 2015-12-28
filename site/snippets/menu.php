@@ -1,12 +1,11 @@
 <nav id="menu" class="floating">
   <div class="margin">
     <? snippet('icon', array('vertical' => false)) ?>
-
     <ul class="menu">
       <?
-      $isHome = $page->isHomePage();
-      $preHome = $isHome ? '' : $site->url();
-      $isBlog = $page->title() == 'Blog';
+        $isHome = $page->isHomePage();
+        $preHome = $isHome ? '' : $site->url();
+        $isBlog = $page->title() == 'Blog';
       ?>
       <li><a href="<?php echo $preHome ?>#main">Home</a></li>
       <li><a href="<?php echo $preHome ?>#projects">Projects</a></li>

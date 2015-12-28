@@ -1,16 +1,12 @@
-
-    <? $hasImage = !$page->isHomePage() && $image = $page->images()->sortBy('sort', 'asc')->first(); ?>
+<? $hasImage = !$page->isHomePage() && $image = $page->images()->sortBy('sort', 'asc')->first(); ?>
     <? if($hasImage): ?>
     <div class="coverbackground fullwrapper footerimage" style="background: url(<?php echo $image->url() ?>);">
     <? else: ?>
     <div class="coverbackground fullwrapper footer">
     <? endif; ?>
-
         <footer class="margin footerheight positionrelative outerbottom">
-
           <div class="innerbottom fullwidth">
             <?php snippet('icon', array('white' => !$hasImage)) ?>
-
             <div id="biz" <? if(!$hasImage): echo 'class="inverted"'; endif; ?> >
               <ul>
                 <li><a href="maps:q=Skoleholdervej 53, 2.tv., 2400 Copenhagen, Denmark">Skoleholdervej 53 – 2.tv – 2400 København NV</a></li>
@@ -23,7 +19,6 @@
         </footer>
       </div>
     </div>
-
     <?php snippet('piwik') ?>
   </body>
 </html>
