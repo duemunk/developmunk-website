@@ -116,7 +116,7 @@ h17.156c1.1,0,1.363-0.637,0.586-1.414L91.415,65.258z"/>';
   endif;
 ?>
 <div class="logo">
-  <?php if ($link) : echo '<a class="logo" href="">'; endif; ?>
+  <?php if ($link) : echo '<a class="logo" href="/">'; endif; ?>
   <svg class="logo" version="1.1" viewBox="0 0 <?php echo $width ?> <?php echo $height?>">
       <g id="bigM"><linearGradient id="<?php echo $id ?>" gradientUnits="userSpaceOnUse" <?php echo $gradientlocations ?> >
         <stop class="logoGradStart" offset="0" stop-color="<?php echo $start ?>"/>
