@@ -1,6 +1,6 @@
 <div id="contact" class="">
   <div class="margin section">
-    <p class="center">I’m currently not looking for new collaborations or fun side-jobs,</br>but why not contact me anyway:</p>
+    <p class="center">I’m always curious about new collaborations and interesting projects.</br>Let's get in touch!</p>
     <p class="center"><a class="list" href="mailto:tobias@developmunk.dk">tobias@developmunk.dk</a><a class="list" href="tel:004560870112">(+45) 60 87 01 12</a>
       <a class="list" href="https://twitter.com/tobiasdm">@tobiasdm</a>
       <a class="list" href="https://github.com/duemunk">github</a>

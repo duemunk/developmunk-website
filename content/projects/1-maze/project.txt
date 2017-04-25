@@ -14,7 +14,7 @@ Text: <p class="margin">(link: https://itunes.apple.com/app/id1043466894 text: M
 
 ----
 
-What-i-did: Interface + graphics + audio + coding
+What-i-did: Design + audio + coding
 
 ----
 

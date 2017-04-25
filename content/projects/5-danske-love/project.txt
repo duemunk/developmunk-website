@@ -14,7 +14,7 @@ Text: <p class="margin">This (link: http://appstore.com/danskelove text:iPad+iPh
 
 ----
 
-What-i-did: Interface + coding
+What-i-did: Design + coding
 
 ----
 

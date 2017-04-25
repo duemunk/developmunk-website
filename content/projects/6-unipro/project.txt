@@ -14,7 +14,7 @@ Text: <p class="margin">These (link: http://uniprolaptimer.com text: Unipro) guy
 
 ----
 
-What-i-did: Interface + graphics + coding
+What-i-did: Design + coding
 
 ----
 

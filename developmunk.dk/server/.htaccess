@@ -1,0 +1,5 @@
+
+AddType application/x-httpd-php-old .php
+
+Options +Indexes
+RewriteEngine On
