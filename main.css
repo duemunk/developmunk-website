@@ -682,17 +682,21 @@ div.bigscreen {
 
 div.bigscreen.wake {
 	background-image: url('http://developmunk.dk/images/Wake.png');
-
 }
 div.bigscreen.unipro {
 	background-image: url('http://developmunk.dk/images/UniProC.jpg');
-
 }
 div.bigscreen.dklove {
 	background-image: url('http://developmunk.dk/images/dkloveC.jpg');
 }
 div.bigscreen.kbx {
 	background-image: url('http://developmunk.dk/images/kbxC.jpg');
+}
+div.bigscreen.findzebra {
+	background-image: url('http://developmunk.dk/images/findzebrac.jpg');
+}
+div.bigscreen.ecco {
+	background-image: url('http://developmunk.dk/images/eccoc.jpeg');
 }
 
 div.smallscreen {

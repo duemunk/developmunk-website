@@ -6,7 +6,7 @@ Year: 2016
 
 ----
 
-Excerpt: I'm working with FindZebra on making a digital health assistant.
+Excerpt: I'm working with (link: http://www.findzebra.com text: FindZebra) on making a digital health assistant.
 
 ----
 
