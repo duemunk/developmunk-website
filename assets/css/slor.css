@@ -1,0 +1,653 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	vertical-align:baseline;
+}
+body {
+	line-height:1;
+}
+ol,
+ul {
+	list-style:none;
+}
+blockquote,
+q {
+	quotes:none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+  font-weight: 400;
+}
+html {
+	overflow-y: scroll;
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	display: block;
+}
+audio,
+canvas,
+video {
+	display: inline-block;
+}
+audio:not([controls]) {
+	display: none;
+}
+del {
+	color: #333;
+}
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+small {
+	font-size: smaller;
+}
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+
+/* Clearing floats */
+.clear:after,
+.wrapper:after,
+.format-status .entry-header:after {
+	clear: both;
+}
+.clear:before,
+.clear:after,
+.wrapper:before,
+.wrapper:after,
+.format-status .entry-header:before,
+.format-status .entry-header:after {
+	display: table;
+	content: "";
+}
+
+svg {
+  display: block;
+}
+
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+
+/** Ultra Light */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 100;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+}
+
+/** Thin */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+}
+
+/** Regular */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+/** Medium */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+}
+
+/** Semi Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 600;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+
+/** Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+
+
+
+/* Custom */
+
+
+html {
+	font-size: 156.25%;
+
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body {
+  font-family: "San Francisco", -apple-system, BlinkMacSystemFont, "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+
+  font-size: 25px;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 80px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 36px;
+}
+
+button,
+input[type=submit]
+{
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 16px;
+  border: 2px solid #fff500;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 25px;
+  display: inline-block;
+  min-height: 44px;
+  min-width: 200px;
+  background-color: #fff500;
+  color: #000000;
+
+}
+
+button:hover, input[type=submit]:hover {
+  background-color: #000000;
+  color: #fff500;
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email] {
+  border-radius: 16px;
+  border: 2px solid #fff500;
+  font-weight: 400;
+  font-size: 25px;
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 10px 0;
+  min-height: 44px;
+  min-width: 200px;
+  color: #fff500;
+  background-color: #000000;
+}
+
+::-webkit-input-placeholder {
+  color: #7F7F7F;
+}
+::-moz-placeholder {
+  color: #7F7F7F;
+}
+:-ms-input-placeholder {
+  color: #7F7F7F;
+}
+:-moz-placeholder {
+  color: #7F7F7F;
+}
+
+input:not([type=radio]):not([type=checkbox]) {
+  -webkit-appearance: none;
+}
+
+
+
+
+header {
+}
+
+header h1 {
+  margin: 100px;
+}
+
+
+.margin {
+	display: block;
+}
+
+::-moz-selection {
+	background-color: #FFF500;
+	color: #000000;
+}
+::selection {
+	background: #FFF500;
+	color: #000000;
+	-webkit-text-fill-color: #000000; /* Undo -webkit-text-fill-color: transparent; */
+	border-color: #000000;
+}
+
+
+.center {
+	text-align: center;
+}
+.center svg {
+    margin-left: auto;
+    margin-right: auto;
+}
+.righttext {
+	text-align: right;
+}
+.right {
+  float: right;
+}
+
+.fullwrapper {
+  position: relative; /* Avoid elements after but with negative margin is shown above MOVED TO SPECIFIC ELEMENTS */
+}
+
+p {
+	display: block;
+	padding-top: 0.4em;
+	padding-bottom: 1.2em;
+	text-align: justify;
+}
+
+a {
+  text-decoration: underline;
+	word-wrap: break-word;
+}
+
+a:link { /* unvisited link */
+	color:#3B8298;
+}
+a:visited { /* visited link */
+  color:#3B8298;
+}
+a:hover { /* mouse over link - must be enabled when webkit gradient is on */
+	color:#55C2DB;
+}
+
+article ul {
+  list-style-type: square;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+article ul > li {
+  color: rgba(35,31,32,0.1);
+}
+article ul > li > span {
+  color: #231f20;
+}
+
+
+
+
+/* Footer */
+div#biz {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%;
+	color: #231f20;
+}
+div#biz.inverted {
+	color: #f3f1f1;
+}
+
+
+footer svg.logo {
+  height: 95px;
+  width: 91px;  /* Ratio h480 w460 */
+
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 4px;
+}
+
+
+
+div#biz ul{
+	display: block;
+	width: 100%;
+}
+div#biz ul li {
+	list-style: none;
+	text-align: right;
+}
+div#biz ul li a{
+	color: #231f20;
+	text-decoration:none;
+}
+div#biz.inverted ul li a {
+	color: #f3f1f1;
+}
+div#biz ul li a:hover {
+	color: #000;
+	text-shadow: 0 0 6px #f3f1f1;
+}
+div#biz.inverted ul li a:hover {
+	color: #fff;
+	text-shadow: 0 0 4px #af3b25;
+}
+
+
+.develop, .munk {
+	font-family:"Titillium Web", sans-serif;
+}
+.develop {
+	font-weight: 400;
+}
+.munk {
+	font-weight: 600;
+}
+
+
+
+.bigimagefooter
+{
+  background-repeat: no-repeat !important;
+  background-attachment: fixed;
+  background-position: center center;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+.footerheight {
+  height: 440px;
+}
+.positionrelative {
+  position: relative;
+}
+.outerbottom {
+  padding: 0;
+}
+.innerbottom {
+  position: absolute;
+	bottom: 60px;
+}
+.fullwidth {
+  width: 100%;
+}
+
+
+
+
+/* =Media queries
+-------------------------------------------------------------- */
+
+/* Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See http://core.trac.wordpress.org/ticket/25888.
+ */
+@-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+
+
+
+/* Width > 920 */
+@media screen and (min-width: 921px) {
+	.margin {
+		margin: 0 auto;
+		width: 800px;
+	}
+  .marginonlarge {
+    margin: 0 auto;
+		width: 800px;
+  }
+  .headerimage {
+    height: 500px;
+  }
+  .smallmarginonlarge {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+/* Width 600 < and <= 920 */
+@media screen and (min-width: 601px) and (max-width: 920px) {
+	.margin,
+  .marginofflarge {
+		margin: 0 60px;
+	}
+}
+
+
+@media screen and (max-width: 701px) {
+  nav#menu g.logoname {
+    display: none;
+  }
+  nav#menu div.logo {
+    width: 39px;
+  }
+}
+
+
+/* Width <= 600 */
+@media screen and (max-width: 600px) {
+	html {
+		font-size: 110%;
+	}
+	.margin,
+	.marginofflarge {
+		margin: 0 10%; /* 60 / 600 */
+	}
+	header#main svg.logo {
+		width: 160px;
+		height: 167px;
+	}
+	nav#menu div.logo {
+	  width: 27px; /* ratio 115 / 85 */
+	}
+	nav#menu svg.logo {
+	  width: 140px;
+	  height: 20px; /* ratio 600 / 85 */
+	}
+	nav#menu div.logo {
+	  top: 14px;
+	}
+	nav#menu ul li a {
+	  display: block;
+	  padding: 10px 5px 10px;
+	}
+	div.section {
+		padding-top: 60px;
+	}
+  /* Center footer content */
+  footer svg.logo {
+      margin-left: auto;
+      margin-right: auto;
+  }
+  div#biz ul li {
+      text-align: center;
+  }
+
+	div.bigscreen {
+		width: 160px;
+   		height: 160px;
+	}
+	a#linkedin svg {
+		width: 63px;
+		top: -3px;
+	}
+}
+
+
+/* Width 350 */
+@media screen and (max-width: 350px) {
+  nav#menu div.margin {
+    margin: 0 10px;
+  }
+}
+
+
+
+/* Embedded video */
+
+
+.black {
+  background-color: #000;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.28%;
+  height: 0; overflow: hidden;
+  margin-bottom: 29px;
+}
+.video-container.youtube {
+  padding-bottom: 56.25%; /* 52.6% */
+}
+.video-container.vimeo {
+  padding-bottom: 56.28%;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.controls-wrapper .title
+.controls-wrapper .sidedock {
+  display: none;
+}
+
+
+
+/* Quote */
+
+.quote {
+  text-align: center;
+  color: #f3f1f1;
+  padding: 60px 20px;
+  margin-bottom: 60px;
+
+  font-style: italic;
+
+  position: relative;
+}
+.quoteinner {
+	font-size: 40px;
+	font-size: 1.6em;
+	line-height: 1.5;
+	padding-top: 0.45em;
+	padding-bottom: 0.05em;
+}
+.quoteinner:before {
+  content: open-quote;
+  font-size: 400px;
+  color: rgb(85,194,219);
+  color: rgba(255,255,255,0.1);
+  top: -120px;
+  left: -20px;
+  position: absolute;
+}
+.quote .author:before {
+  content: "—";
+  font-style: italic;
+}
+
+.quote .author {
+  text-align: right;
+  margin-top: 1.6em;
+	margin-bottom: 0.05em;
+  font-style: normal;
+}
+
+
+
+
+/* Image */
+
+img.regular {
+  width: 100%;
+  display: block;
+}
+div.imagecontainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+div.imagewrapper {
+	position: relative;
+}
+div.imagedescriptionwrapper {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+
+  padding: 10px 0;
+	color: #FFF500;
+  text-shadow: 0 0 10px #000000;
+}
+div.imagedescriptionwrapper .imagedescription {
+    text-align: right;
+}
