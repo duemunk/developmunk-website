@@ -1,7 +1,11 @@
-const gulp = require('gulp');
-const php  = require('gulp-connect-php');
-const browserSync = require('browser-sync').create();
-const reload  = browserSync.reload;
+const gulp         = require('gulp');
+const php          = require('gulp-connect-php');
+const browserSync  = require('browser-sync').create();
+const postcss      = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const cssImport    = require('postcss-import');
+
+const reload       = browserSync.reload;
 
 // PHP | Starts a new PHP server
 // -----------------------------------
@@ -29,16 +33,29 @@ gulp.task('browser-sync',
     }
 );
 
+gulp.task('watch', function () {
+    gulp.watch(['./src/css/**/*.css'], ['css']).on('change', reload);
+    gulp.watch(['./site/**/*.php']).on('change', reload);
+});
+
+
 // Serve | Launches Dev Environment
 // (use this to work on your project)
 // -----------------------------------
 gulp.task(
     'serve',
-    ['browser-sync'],
-    function() {
-        gulp.watch(['./site/**/*.php']).on('change', reload);
-    }
+    ['css', 'browser-sync', 'watch']
 );
+
+gulp.task('css', function () {
+    return gulp.src('./src/css/**/[^_]*.css')
+        .pipe(postcss(
+            [ 
+                cssImport(),
+                autoprefixer()
+            ]))
+        .pipe(gulp.dest('./assets/css/'));
+});
 
 // Default Gulp Task | (change this to whatever you like)
 // -----------------------------------

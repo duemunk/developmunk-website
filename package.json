@@ -13,8 +13,12 @@
   },
   "homepage": "https://github.com/duemunk/developmunk-website#readme",
   "devDependencies": {
+    "autoprefixer": "^7.1.2",
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.0",
-    "gulp-connect-php": "^1.0.1"
+    "gulp-connect-php": "^1.0.1",
+    "gulp-postcss": "^7.0.0",
+    "postcss-import": "^10.0.0",
+    "postcss-nested": "^2.1.2"
   }
 }
