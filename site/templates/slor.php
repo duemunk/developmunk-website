@@ -18,6 +18,12 @@
       </div>
       <h1>Edit<br>Portrait Mode<br>Photos.</h1>
 
+      <div id="appstore">
+        <a href=""> <!-- TODO: Add link to appstore -->
+          <?php snippet('slor-appstore') ?>
+        </a>
+      </div>
+
       <div id="aperture" class="demo-text">
         <h2>Change Aperture.</h2>
         <p>Change the aperture and see the amount of background blur adapt just a the bokeh effect on a DSLR.</p>
