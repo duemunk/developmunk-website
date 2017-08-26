@@ -32,7 +32,7 @@
         </div>
 
         <div id="demo-phone" class="">
-          <?php snippet('slor-ui-animation') ?>
+          <?php snippet('slor-demo') ?>
         </div>
 
         <div id="demo-text">
@@ -42,7 +42,7 @@
           </div>
           <div id="focus" class="dimmed">
             <h2>Change Focus.</h2>
-            <p>Move the focus point to any place in the photo. The selected focus point will stay sharp and anything further back the to motiv will be blurred. Any Portrait Mode photo taken in iOS 11 can be edited in Slør.</p>
+            <p>Move the focus point to any place in the photo. The selected focus point will stay sharp and anything further back the to motiv will be blurred.</p>
           </div>
         </div>
       </div>
