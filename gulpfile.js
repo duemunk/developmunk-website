@@ -5,6 +5,7 @@ const postcss      = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssImport    = require('postcss-import');
 const cssVariables = require('postcss-custom-properties');
+const cssCalc = require('postcss-calc');
 
 const reload       = browserSync.reload;
 
@@ -19,8 +20,8 @@ gulp.task('php',
 
 // Load BrowserSync
 // -----------------------------------
-gulp.task('browser-sync', 
-    ['php'], 
+gulp.task('browser-sync',
+    ['php'],
     function() {
         browserSync.init({
             proxy: '127.0.0.1:8000',
@@ -51,9 +52,10 @@ gulp.task(
 gulp.task('css', function () {
     return gulp.src('./src/css/**/[^_]*.css')
         .pipe(postcss(
-            [ 
+            [
                 cssImport(),
                 cssVariables(),
+                cssCalc(),
                 autoprefixer()
             ]))
         .pipe(gulp.dest('./assets/css/'));

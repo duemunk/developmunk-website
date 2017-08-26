@@ -1,3 +1,16 @@
 :root {
-    --color: red;
+    --color-accent: #fff500;
+    --color-background: #000;
+    --color-primary: #fff;
+    --color-secondary: #ccc;
+    --color-overlay: #4D4D4D;
+    --border-radius: 8px;
+    --padding-default: 10px;
+    --padding-large: 20px;
+    --font-weight-normal: 400;
+    --font-weight-strong: 700;
+    --font-size-body: 17px;
+    --font-size-subheadline: 25px;
+    --font-size-headline: 36px;
+    --font-size-hero: 70px;
 }

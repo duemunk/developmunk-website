@@ -1,0 +1,16 @@
+@import './_settings.css';
+
+.quote::before {
+  content: "”";
+  font-size: 70px;
+}
+.author {
+  font-weight: var(--font-weight-strong);
+  text-align: right;
+}
+.author::before {
+  content: "—";
+}
+.author::after {
+  content: ".";
+}

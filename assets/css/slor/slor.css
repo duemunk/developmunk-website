@@ -21,6 +21,101 @@ img {
   }
 body {
     font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: red;
+    color: #fff;
+    background-color: #000;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 25px;
 }
-
+h1 {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 75px;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+}
+h3 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 25px;
+}
+button,
+input
+{
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 17px;
+  display: inline-block;
+  min-height: 44px;
+  min-width: 200px;
+}
+button,
+input[type=submit]
+{
+  margin: 10px 0;
+  border: 2px solid #fff500;
+  text-decoration: none;
+  font-weight: 700;
+  background-color: #fff500;
+  color: #000;
+}
+button:hover, input[type=submit]:hover {
+  background-color: #000;
+  color: #fff500;
+  cursor: pointer;
+}
+input[type=text],
+input[type=email] {
+  border: none;
+  font-weight: 400;
+  color: #000;
+  background-color: #4D4D4D;
+  margin: 10px 10px;
+}
+input::-webkit-input-placeholder {
+  font-family: "San Francisco", -apple-system, BlinkMacSystemFont, "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  color: #ccc;
+}
+input:-ms-input-placeholder {
+  font-family: "San Francisco", -apple-system, BlinkMacSystemFont, "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  color: #ccc;
+}
+input::placeholder {
+  font-family: "San Francisco", -apple-system, BlinkMacSystemFont, "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  color: #ccc;
+}
+input:focus {
+  outline: none;
+}
+input[type=text]:focus,
+input[type=email]:focus {
+  background-color: #4D4D4D;
+}
+input:focus {
+  -webkit-box-shadow:
+    0 0 0 3px #000,
+    0 0 0 5px #4D4D4D;
+          box-shadow:
+    0 0 0 3px #000,
+    0 0 0 5px #4D4D4D;
+}
+.quote::before {
+  content: "”";
+  font-size: 70px;
+}
+.author {
+  font-weight: 700;
+  text-align: right;
+}
+.author::before {
+  content: "—";
+}
+.author::after {
+  content: ".";
+}

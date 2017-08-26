@@ -1,4 +1,26 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: var(--color);
+    color: var(--color-primary);
+    background-color: var(--color-background);
+    font-weight: var(--font-weight-strong);
+    font-size: var(--font-size-body);
+    line-height: 25px;
+}
+
+h1 {
+  font-size: var(--font-size-hero);
+  font-weight: var(--font-weight-strong);
+  line-height: 75px;
+}
+
+h2 {
+  font-size: var(--font-size-headline);
+  font-weight: var(--font-weight-strong);
+  line-height: 50px;
+}
+
+h3 {
+  font-size: var(--font-size-subheadline);
+  font-weight: var(--font-weight-strong);
+  line-height: 25px;
 }

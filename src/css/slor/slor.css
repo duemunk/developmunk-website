@@ -1,4 +1,5 @@
 @import './_settings.css';
 @import './_reset.css';
 @import './_base.css';
-
+@import './_form.css';
+@import './_quotes.css';
