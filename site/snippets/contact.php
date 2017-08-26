@@ -5,7 +5,7 @@
       <a class="list" href="https://twitter.com/tobiasdm">@tobiasdm</a>
       <a class="list" href="https://github.com/duemunk">github</a>
       <a class="list" id="linkedin" title="LinkedIn" href="http://dk.linkedin.com/pub/tobias-due-munk/22/b0/6a7/" rel="author">
-        <? snippet('linkedin') ?>
+        <?php snippet('linkedin') ?>
       </a>
     </p>
     <div class="smallscreen tobiasdm" style="background-image: url('<?php echo url('assets/images/tobiasdmC.jpg') ?>');"></div>

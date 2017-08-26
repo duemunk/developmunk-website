@@ -20,4 +20,4 @@
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/touch-icon-iphone-retina.png" />
 </head>
 <body>
-  <? snippet('menu') ?>
+  <?php snippet('menu') ?>
