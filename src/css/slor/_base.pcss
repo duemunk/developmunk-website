@@ -1,10 +1,11 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: var(--color-primary);
   background-color: var(--color-background);
-  font-weight: var(--font-weight-strong);
+  font-weight: var(--font-weight-normal);
   font-size: var(--font-size-body);
-  line-height: 25px;
+  line-height: calc(var(--baseline) * 2);
+  letter-spacing: 0.04rem;
   padding: 2vmax 3vw;
   max-width: 1300px;
   margin: 0 auto;
@@ -13,19 +14,23 @@ body {
 h1 {
   font-size: var(--font-size-hero);
   font-weight: var(--font-weight-strong);
-  line-height: 75px;
+  line-height: calc(var(--baseline) * 6);
 }
 
 h2 {
   font-size: var(--font-size-headline);
   font-weight: var(--font-weight-strong);
-  line-height: 50px;
+  line-height: calc(var(--baseline) * 4);
 }
 
 h3 {
   font-size: var(--font-size-subheadline);
   font-weight: var(--font-weight-strong);
-  line-height: 25px;
+  line-height: calc(var(--baseline) * 2.5);
+}
+
+a {
+  color: inherit;
 }
 
 .dimmed {

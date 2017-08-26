@@ -1,5 +1,12 @@
 @import './_settings.pcss';
 
+form {
+  display: flex;
+  justify-content: center;
+  margin: calc(var(--padding-default) * -0.5);
+  padding: var(--padding-default) 0;
+}
+
 button,
 input {
   border-radius: var(--border-radius);
@@ -8,11 +15,11 @@ input {
   display: inline-block;
   min-height: 44px;
   min-width: 200px;
+  margin: calc(var(--padding-default) * 0.5);
 }
 
 button,
 input[type=submit] {
-  margin: 10px 0;
   border: 2px solid var(--color-accent);
   text-decoration: none;
   font-weight: var(--font-weight-strong);
@@ -33,7 +40,6 @@ input[type=email] {
   font-weight: var(--font-weight-normal);
   color: var(--color-background);
   background-color: var(--color-overlay);
-  margin: 10px;
 }
 
 input::placeholder {
