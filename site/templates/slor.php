@@ -11,7 +11,11 @@
   <body>
 
     <header>
-      <h1><?php echo $page->title()->html() ?></h1>
+      <div id="logo">
+        <a href="/slor">
+          <?php snippet('slor-logo') ?>
+        </a>
+      </div>
       <h1>Edit<br>Portrait Mode<br>Photos.</h1>
 
       <div id="aperture" class="demo-text">
