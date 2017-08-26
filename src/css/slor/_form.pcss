@@ -7,54 +7,41 @@ form {
   padding: var(--padding-default) 0;
 }
 
-button,
 input {
+  border: none;
   border-radius: var(--border-radius);
   padding: var(--padding-default) calc(var(--padding-default) * 1.5);
   font-size: var(--font-size-body);
-  display: inline-block;
-  min-height: 44px;
+  font-weight: var(--font-weight-normal);
+  line-height: calc(var(--baseline) * 2);
+  color: inherit;
+  background-color: var(--color-overlay);
   min-width: 200px;
   margin: calc(var(--padding-default) * 0.5);
-}
 
-button,
-input[type=submit] {
-  border: 2px solid var(--color-accent);
-  text-decoration: none;
-  font-weight: var(--font-weight-strong);
-  background-color: var(--color-accent);
-  color: var(--color-background);
-}
+  &:focus {
+    outline: none;
+    background-color: var(--color-overlay);
+    box-shadow:
+      0 0 0 3px var(--color-background),
+      0 0 0 5px var(--color-overlay);
+  }
 
-button:hover,
-input[type=submit]:hover {
-  background-color: var(--color-background);
-  color: var(--color-accent);
-  cursor: pointer;
-}
+  &::placeholder {
+    font-weight: var(--font-weight-normal);
+    color: var(--color-secondary);
+  }
 
-input[type=text],
-input[type=email] {
-  border: none;
-  font-weight: var(--font-weight-normal);
-  color: var(--color-background);
-  background-color: var(--color-overlay);
-}
+  &[type=submit] {
+    border: 2px solid var(--color-accent);
+    font-weight: var(--font-weight-strong);
+    color: var(--color-background);
+    background-color: var(--color-accent);
+    cursor: pointer;
 
-input::placeholder {
-  font-weight: var(--font-weight-normal);
-  color: var(--color-secondary);
-}
-
-input:focus {
-  outline: none;
-  box-shadow:
-    0 0 0 3px var(--color-background),
-    0 0 0 5px var(--color-overlay);
-}
-
-input[type=text]:focus,
-input[type=email]:focus {
-  background-color: var(--color-overlay);
+    &:hover {
+      background-color: var(--color-background);
+      color: var(--color-accent);
+    }
+  }
 }
