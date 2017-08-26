@@ -28,7 +28,7 @@
         <h2>Change Aperture.</h2>
         <p>Change the aperture and see the amount of background blur adapt just a the bokeh effect on a DSLR.</p>
       </div>
-      <div id="focus" class="demo-text">
+      <div id="focus" class="demo-text dimmed">
         <h2>Change Focus.</h2>
         <p>Move the focus point to any place in the photo. The selected focus point will stay sharp and anything further back the to motiv will be blurred. Any Portrait Mode photo taken in iOS 11 can be edited in Slør.</p>
       </div>

@@ -24,3 +24,7 @@ h3 {
   font-weight: var(--font-weight-strong);
   line-height: 25px;
 }
+
+.dimmed {
+  opacity: 0.5;
+}
