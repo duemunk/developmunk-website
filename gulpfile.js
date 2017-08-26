@@ -2,6 +2,8 @@ const gulp         = require('gulp');
 const php          = require('gulp-connect-php');
 const browserSync  = require('browser-sync').create();
 const rename       = require('gulp-rename');
+const jsMinify     = require('gulp-uglify');
+const cssMinify    = require('gulp-clean-css');
 const postcss      = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssImport    = require('postcss-import');
@@ -11,45 +13,31 @@ const cssNested    = require('postcss-nested');
 
 const reload       = browserSync.reload;
 
-// PHP | Starts a new PHP server
-// -----------------------------------
 gulp.task('php',
     function() {
-        php.server({ base: './', port: 8000, keepalive: true});
+        php.server({ base: './', port: 3000, keepalive: true});
     }
 );
 
-
-// Load BrowserSync
-// -----------------------------------
 gulp.task('browser-sync',
     ['php'],
     function() {
         browserSync.init({
-            proxy: '127.0.0.1:8000',
-            port: 8000,
+            proxy: '127.0.0.1:3000',
+            port: 8080,
             open: true,
             notify: false,
             snippetOptions: {
-            ignorePaths: ["./panel/**"]
-            },
+                ignorePaths: ["./panel/**"]
+            }
         });
     }
 );
 
 gulp.task('watch', function () {
-    gulp.watch(['./src/css/**/*.css'], ['css']).on('change', reload);
+    gulp.watch(['./src/css/**/*.pcss'], ['css']).on('change', reload);
     gulp.watch(['./site/**/*.php']).on('change', reload);
 });
-
-
-// Serve | Launches Dev Environment
-// (use this to work on your project)
-// -----------------------------------
-gulp.task(
-    'serve',
-    ['css', 'browser-sync', 'watch']
-);
 
 gulp.task('css', function () {
     return gulp.src('./src/css/**/[^_]*.pcss')
@@ -60,14 +48,14 @@ gulp.task('css', function () {
                 cssCalc(),
                 cssNested(),
                 autoprefixer()
-            ]))
+            ]
+        ))
         .pipe(rename({extname: '.css'}))
+        .pipe(cssMinify())
         .pipe(gulp.dest('./assets/css/'));
 });
 
-// Default Gulp Task | (change this to whatever you like)
-// -----------------------------------
 gulp.task(
     'default',
-    ['serve']
+    ['css', 'browser-sync', 'watch']
 );

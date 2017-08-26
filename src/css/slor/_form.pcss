@@ -1,8 +1,7 @@
 @import './_settings.pcss';
 
 button,
-input
-{
+input {
   border-radius: var(--border-radius);
   padding: var(--padding-default) calc(var(--padding-default) * 1.5);
   font-size: var(--font-size-body);
@@ -10,9 +9,9 @@ input
   min-height: 44px;
   min-width: 200px;
 }
+
 button,
-input[type=submit]
-{
+input[type=submit] {
   margin: 10px 0;
   border: 2px solid var(--color-accent);
   text-decoration: none;
@@ -21,7 +20,8 @@ input[type=submit]
   color: var(--color-background);
 }
 
-button:hover, input[type=submit]:hover {
+button:hover,
+input[type=submit]:hover {
   background-color: var(--color-background);
   color: var(--color-accent);
   cursor: pointer;
@@ -33,24 +33,22 @@ input[type=email] {
   font-weight: var(--font-weight-normal);
   color: var(--color-background);
   background-color: var(--color-overlay);
-  margin: 10px 10px;
+  margin: 10px;
 }
 
 input::placeholder {
-  font-family: "San Francisco", -apple-system, BlinkMacSystemFont, "Helvetica", "Arial", sans-serif;
   font-weight: var(--font-weight-normal);
   color: var(--color-secondary);
 }
 
 input:focus {
   outline: none;
-}
-input[type=text]:focus,
-input[type=email]:focus {
-  background-color: var(--color-overlay);
-}
-input:focus {
   box-shadow:
     0 0 0 3px var(--color-background),
     0 0 0 5px var(--color-overlay);
+}
+
+input[type=text]:focus,
+input[type=email]:focus {
+  background-color: var(--color-overlay);
 }

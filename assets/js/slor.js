@@ -1,3 +1,5 @@
+var repeaterDelay = 1000;
+
 var app = new Vue({
     el: '#app',
     data: {
@@ -14,7 +16,7 @@ var app = new Vue({
         isAnimating: true
     },
     methods: {
-        animateBlur: function () {
+        animate: function () {
             this.blur.amount = parseInt(this.blur.amount);
             if (this.isAnimating) {
                 if (this.blur.amount === this.blur.max) {
@@ -32,16 +34,16 @@ var app = new Vue({
         },
         repeater: function () {
             setTimeout(function(){
-                this.animateBlur()
-            }.bind(this), 1000);
-        },
-        stopRepeat: function () {
-            this.isAnimating = false;
+                this.animate()
+            }.bind(this), repeaterDelay);
         },
         startRepeat: function () {
             setTimeout(function(){
                 this.isAnimating = true;
-            }.bind(this), 3000);
+            }.bind(this), repeaterDelay);
+        },
+        stopRepeat: function () {
+            this.isAnimating = false;
         },
         resetBlur: function () {
             this.blur.amount = this.blur.min;
@@ -51,6 +53,6 @@ var app = new Vue({
         }
     },
     created: function () {
-        this.animateBlur();
+        this.animate();
     }
 })
