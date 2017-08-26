@@ -7,6 +7,7 @@
     <meta name="description" content="<?php echo $site->description()->html() ?>">
     <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
     <?php echo css('assets/css/slor/slor.css') ?>
+    <?php echo js('//unpkg.com/vue') ?>
   </head>
   <body>
 
@@ -24,6 +25,10 @@
         </a>
       </div>
 
+      <div id="demo-phone" class="">
+        <?php snippet('slor-ui-animation') ?>
+      </div>
+
       <div id="aperture" class="demo-text">
         <h2>Change Aperture.</h2>
         <p>Change the aperture and see the amount of background blur adapt just a the bokeh effect on a DSLR.</p>
@@ -37,6 +42,7 @@
 
     <main>
       <div class="margin">
+
         <form action="//developmunk.us16.list-manage.com/subscribe/post?u=6355a7613325da59aa82b5576&amp;id=7d906bb182" method="post" name="mc-embedded-subscribe-form" class="center" target="_blank" novalidate>
 
           <input type="email" value="" name="EMAIL" placeholder="E-mail address">
