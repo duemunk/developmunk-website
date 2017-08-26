@@ -4,6 +4,7 @@ const browserSync  = require('browser-sync').create();
 const postcss      = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssImport    = require('postcss-import');
+const cssVariables = require('postcss-custom-properties');
 
 const reload       = browserSync.reload;
 
@@ -52,6 +53,7 @@ gulp.task('css', function () {
         .pipe(postcss(
             [ 
                 cssImport(),
+                cssVariables(),
                 autoprefixer()
             ]))
         .pipe(gulp.dest('./assets/css/'));
