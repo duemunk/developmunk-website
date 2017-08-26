@@ -18,30 +18,35 @@
           <?php snippet('slor-logo') ?>
         </a>
       </div>
-      <h1>Edit<br>Portrait Mode<br>Photos.</h1>
-
       <div id="appstore">
         <a href=""> <!-- TODO: Add link to appstore -->
           <?php snippet('slor-appstore') ?>
         </a>
       </div>
-
-      <div id="demo-phone" class="">
-        <?php snippet('slor-ui-animation') ?>
-      </div>
-
-      <div id="aperture" class="demo-text">
-        <h2>Change Aperture.</h2>
-        <p>Change the aperture and see the amount of background blur adapt just a the bokeh effect on a DSLR.</p>
-      </div>
-      <div id="focus" class="demo-text dimmed">
-        <h2>Change Focus.</h2>
-        <p>Move the focus point to any place in the photo. The selected focus point will stay sharp and anything further back the to motiv will be blurred. Any Portrait Mode photo taken in iOS 11 can be edited in Slør.</p>
-      </div>
-
     </header>
 
     <main>
+      <div id="demo">
+        <div id="demo-hero">
+          <h1>Edit<br>Depth<br>Effect<br>Photos.</h1>
+        </div>
+
+        <div id="demo-phone" class="">
+          <?php snippet('slor-ui-animation') ?>
+        </div>
+
+        <div id="demo-text">
+          <div id="aperture">
+            <h2>Change Aperture.</h2>
+            <p>Change the aperture and see the amount of background blur adapt just a the bokeh effect on a DSLR.</p>
+          </div>
+          <div id="focus" class="dimmed">
+            <h2>Change Focus.</h2>
+            <p>Move the focus point to any place in the photo. The selected focus point will stay sharp and anything further back the to motiv will be blurred. Any Portrait Mode photo taken in iOS 11 can be edited in Slør.</p>
+          </div>
+        </div>
+      </div>
+
       <?php snippet('slor-form') ?>
 
       <p>Slør launches along with iOS 11 mid-September 2017.</p>
