@@ -5,6 +5,9 @@ body {
     font-weight: var(--font-weight-strong);
     font-size: var(--font-size-body);
     line-height: 25px;
+    padding: 2vmax 3vw;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -27,4 +30,41 @@ h3 {
 
 .dimmed {
   opacity: 0.5;
+}
+
+.equal-columns {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: -var(--padding-giant);
+  margin-right: -var(--padding-giant);
+
+  & > div {
+    padding-left: var(--padding-giant);
+    padding-right: var(--padding-giant);
+    margin-bottom: var(--padding-giant);
+  }
+}
+
+
+
+
+@media screen and (min-width: 600px) {
+  .equal-columns {
+    flex-direction: row;
+
+    & > div {
+      flex-basis: 50%;
+      flex-shrink: 0;
+    }
+  }
+}
+
+
+@media screen and (min-width: 900px) {
+  .equal-columns {
+    & > div {
+      flex-basis: 33%;
+    }
+  }
 }

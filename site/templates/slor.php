@@ -49,7 +49,7 @@
         <p>Slør launches along with iOS 11 mid-September 2017.</p>
       </div>
 
-      <div id="quotes" class="margin">
+      <div id="quotes" class="margin equal-columns">
         <div class="quote">
           <p>This app is very awesome. You should buy it this very instant.</p>
           <p class="author">Federici Viticci</p>
@@ -64,7 +64,7 @@
         </div>
       </div>
 
-      <div id="features">
+      <div id="features" class="equal-columns">
         <div class="feature">
           <h3>Lens Blur.</h3>
           <p>Add a radial effect for blurring everything around the subject for dramatic effect.</p>

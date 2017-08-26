@@ -26,6 +26,9 @@ body {
     font-weight: 700;
     font-size: 17px;
     line-height: 25px;
+    padding: 2vmax 3vw;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 h1 {
   font-size: 70px;
@@ -44,6 +47,45 @@ h3 {
 }
 .dimmed {
   opacity: 0.5;
+}
+.equal-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: -50px;
+  margin-right: -50px;
+}
+.equal-columns > div {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 50px;
+  }
+@media screen and (min-width: 600px) {
+  .equal-columns {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+    .equal-columns > div {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+    }
+}
+@media screen and (min-width: 900px) {
+    .equal-columns > div {
+      -ms-flex-preferred-size: 33%;
+          flex-basis: 33%;
+    }
 }
 button,
 input

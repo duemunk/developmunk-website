@@ -6,6 +6,7 @@ const autoprefixer = require('autoprefixer');
 const cssImport    = require('postcss-import');
 const cssVariables = require('postcss-custom-properties');
 const cssCalc = require('postcss-calc');
+const cssNested = require('postcss-nested');
 
 const reload       = browserSync.reload;
 
@@ -56,6 +57,7 @@ gulp.task('css', function () {
                 cssImport(),
                 cssVariables(),
                 cssCalc(),
+                cssNested(),
                 autoprefixer()
             ]))
         .pipe(gulp.dest('./assets/css/'));
