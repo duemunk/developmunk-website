@@ -1,12 +1,13 @@
 const gulp         = require('gulp');
 const php          = require('gulp-connect-php');
 const browserSync  = require('browser-sync').create();
+const rename       = require('gulp-rename');
 const postcss      = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssImport    = require('postcss-import');
 const cssVariables = require('postcss-custom-properties');
-const cssCalc = require('postcss-calc');
-const cssNested = require('postcss-nested');
+const cssCalc      = require('postcss-calc');
+const cssNested    = require('postcss-nested');
 
 const reload       = browserSync.reload;
 
@@ -51,7 +52,7 @@ gulp.task(
 );
 
 gulp.task('css', function () {
-    return gulp.src('./src/css/**/[^_]*.css')
+    return gulp.src('./src/css/**/[^_]*.pcss')
         .pipe(postcss(
             [
                 cssImport(),
@@ -60,6 +61,7 @@ gulp.task('css', function () {
                 cssNested(),
                 autoprefixer()
             ]))
+        .pipe(rename({extname: '.css'}))
         .pipe(gulp.dest('./assets/css/'));
 });
 

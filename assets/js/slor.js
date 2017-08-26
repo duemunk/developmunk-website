@@ -1,26 +1,38 @@
 var app = new Vue({
     el: '#app',
     data: {
-        step: {
+        blur: {
             min: 1,
             max: 3,
-            value: 3
+            amount: 3
+        },
+        focus: {
+            min: 1,
+            max: 3,
+            amount: 1
         },
         isAnimating: true
     },
     methods: {
-        animateValue: function () {
+        animateBlur: function () {
+            this.blur.amount = parseInt(this.blur.amount);
             if (this.isAnimating) {
-                this.step.value = parseInt(this.step.value);
-                this.step.value < this.step.max 
-                    ? this.step.value += 1
-                    : this.step.value = this.step.min
+                if (this.blur.amount === this.blur.max) {
+                    if (this.focus.amount === this.focus.max) {
+                        this.resetBlur();
+                        this.resetFocus();
+                    } else {
+                        this.focus.amount += 1
+                    }
+                } else {
+                    this.blur.amount += 1
+                }
             }
             this.repeater();
         },
         repeater: function () {
             setTimeout(function(){
-                this.animateValue()
+                this.animateBlur()
             }.bind(this), 1000);
         },
         stopRepeat: function () {
@@ -30,9 +42,15 @@ var app = new Vue({
             setTimeout(function(){
                 this.isAnimating = true;
             }.bind(this), 3000);
+        },
+        resetBlur: function () {
+            this.blur.amount = this.blur.min;
+        },
+        resetFocus: function () {
+            this.focus.amount = this.focus.min;
         }
     },
     created: function () {
-        this.animateValue();
+        this.animateBlur();
     }
-  })
+})

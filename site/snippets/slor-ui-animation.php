@@ -1,10 +1,12 @@
 <div id="app">
-    <img v-bind:src="'assets/images/slor/mid' + step.value + '.jpg'" />
+    <div class="img-wrap">
+        <img v-bind:src="'assets/images/slor/' + focus.amount + '.' + blur.amount + '.jpg'" />
+    </div>
     <input 
         type="range"
-        v-model.number="step.value"
-        v-bind:min="step.min"
-        v-bind:max="step.max"
+        v-model.number="blur.amount"
+        v-bind:min="blur.min"
+        v-bind:max="blur.max"
         v-on:mouseover="stopRepeat"
         v-on:mouseleave="startRepeat"
         v-on:touchstart="stopRepeat"
