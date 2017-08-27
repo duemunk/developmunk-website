@@ -2,21 +2,19 @@
 
 :root {
   --range-thumb-size: 30px;
+  --range-thumb-color: var(--color-primary);
+  --range-thumb-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  --range-track-size: 2px;
 }
 
 form {
   width: 100%;
-
   display: flex;
   flex-flow: column wrap;
-
-  margin-left: calc(-var(--padding-default)/2);
-  margin-right: calc(-var(--padding-default)/2);
+  margin: calc(var(--padding-default) / -2);
 
   input {
-    margin-left: calc(var(--padding-default)/2);
-    margin-right: calc(var(--padding-default)/2);
-    margin-bottom: var(--padding-default);
+    margin: calc(var(--padding-default) / 2);
   }
 }
 
@@ -68,10 +66,10 @@ input {
     -webkit-appearance: none;
     background: transparent;
     border: 1px solid black; /* fix for FF unable to apply focus style bug */
+    cursor: pointer;
 
     &::-ms-track {
       width: 100%;
-      cursor: pointer;
       background: transparent;
       border-color: transparent;
       color: transparent;
@@ -79,38 +77,34 @@ input {
 
     &::-webkit-slider-thumb {
       -webkit-appearance: none;
-      height: var(--range-thumb-size);
       width: var(--range-thumb-size);
+      height: var(--range-thumb-size);
       border-radius: 50%;
-      background: var(--color-primary);
-      cursor: pointer;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      background: var(--range-thumb-color);
+      box-shadow: var(--range-thumb-shadow);
       transform: translateY(-50%);
     }
 
     &::-moz-range-thumb {
-      height: var(--range-thumb-size);
       width: var(--range-thumb-size);
+      height: var(--range-thumb-size);
       border-radius: 50%;
-      background: var(--color-primary);
-      cursor: pointer;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      background: var(--range-thumb-color);
+      box-shadow: var(--range-thumb-shadow);
     }
 
     &::-webkit-slider-runnable-track {
       width: 100%;
-      height: 2px;
-      cursor: pointer;
+      height: var(--range-track-size);
       background: var(--color-accent);
-      border-radius: 1px;
+      border-radius: calc(var(--range-track-size) / 2);
     }
 
     &::-moz-range-track {
       width: 100%;
-      height: 2px;
-      cursor: pointer;
+      height: var(--range-track-size);
       background: var(--color-accent);
-      border-radius: 1px;
+      border-radius: calc(var(--range-track-size) / 2);
     }
   }
 }
