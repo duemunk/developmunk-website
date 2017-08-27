@@ -5,7 +5,7 @@ var app = new Vue({
     data: {
         blur: {
             min: 1,
-            max: 3,
+            max: 5,
             amount: 3
         },
         focus: {
