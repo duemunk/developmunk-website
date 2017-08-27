@@ -32,20 +32,7 @@
 
       <div class="section-spacing"></div>
 
-      <div id="quotes" class="margin equal-columns">
-        <div class="quote">
-          <p>This app is very awesome. You should buy it this very instant.</p>
-          <p class="author">Federici Viticci</p>
-        </div>
-        <div class="quote">
-          <p>This app is very awesome. You should buy it this very instant.</p>
-          <p class="author">Federici Viticci</p>
-        </div>
-        <div class="quote">
-          <p>This app is very awesome. You should buy it this very instant.</p>
-          <p class="author">Federici Viticci</p>
-        </div>
-      </div>
+      <?php snippet('slor-quotes') ?>
 
       <div class="section-spacing"></div>
 

@@ -1,0 +1,31 @@
+@import './_settings.pcss';
+
+.quotes {
+  justify-content: center
+}
+
+.quote {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+
+  p.quotation {
+    font-size: 70px;
+    margin-top: 10px;
+    flex-basis: 50px;
+    flex-shrink: 0;
+  }
+
+  .text {
+    flex-grow: 1;
+  }
+
+  .quote-content {
+    color: var(--color-secondary);
+  }
+
+  .author {
+    font-weight: var(--font-weight-strong);
+    text-align: right;
+  }
+}
