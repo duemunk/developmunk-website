@@ -12,11 +12,6 @@
   <body>
 
     <header>
-      <div id="logo">
-        <a href="/slor">
-          <?php snippet('slor-logo') ?>
-        </a>
-      </div>
       <?php snippet('slor-ui-animation') ?>
     </header>
     

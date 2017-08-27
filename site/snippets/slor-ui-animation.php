@@ -1,5 +1,12 @@
 <div id="app">
-  <h1>Edit<br>Portrait<br>Mode<br>Photos.</h1>
+  <div>
+    <div id="logo">
+      <a href="/slor">
+        <?php snippet('slor-logo') ?>
+      </a>
+    </div>
+    <h1>Edit<br>Portrait<br>Mode<br>Photos.</h1>
+  </div>
 
   <div id="demo-phone" class="">
     <div class="img-wrap">
