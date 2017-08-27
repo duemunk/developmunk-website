@@ -77,11 +77,11 @@
         </div>
         <div class="feature">
           <h3>Photo Editing Extension.</h3>
-          <p>Open Add a radial effect for blurring everything around the subject for dramatic effect.</p>
+          <p>...</p>
         </div>
         <div class="feature">
           <h3>Deep iOS Integration.</h3>
-          <p>...</p>
+          <p>... use original/edited. Duplicate, modify. Stores settings in library for later edits. </p>
         </div>
         <div class="feature">
           <h3>Depth Map.</h3>
@@ -89,7 +89,7 @@
         </div>
         <div class="feature">
           <h3>High Quality.</h3>
-          <p>...</p>
+          <p>...actually a little bit better than the built in.</p>
         </div>
       </div>
     </main>
