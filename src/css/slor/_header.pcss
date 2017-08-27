@@ -1,0 +1,30 @@
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: -var(--padding-default);
+  margin-right: -var(--padding-default);
+
+  & > div {
+    margin-left: var(--padding-default);
+    margin-right: var(--padding-default);
+    margin-bottom: var(--padding-large);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    margin-bottom: var(--padding-giant);
+
+    & > div {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  header {
+    margin-bottom: -53px;
+  }
+}
