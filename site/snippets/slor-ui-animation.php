@@ -7,9 +7,15 @@
   <div id="demo-phone" class="">
     <div id="demo-phone-bezel">
       <div class="demo-img-wrap">
-        <div class="demo-focus demo-focus--top"></div>
-        <div class="demo-focus demo-focus--middle"></div>
-        <div class="demo-focus demo-focus--bottom"></div>
+        <div class="demo-focus demo-focus--top">
+          <div class="demo-focus-square" v-if="focus.amount == 1"></div>
+        </div>
+        <div class="demo-focus demo-focus--middle">
+          <div class="demo-focus-square"></div>
+        </div>
+        <div class="demo-focus demo-focus--bottom">
+          <div class="demo-focus-square"></div>
+        </div>
         <img v-bind:src="'assets/images/slor/' + focus.amount + '.' + blur.amount + '.jpg'" />
       </div>
       <input
