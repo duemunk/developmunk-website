@@ -12,20 +12,27 @@
   <body>
 
     <header>
-      <?php snippet('slor-ui-animation') ?>
+      <div id="logo">
+        <a href="/slor">
+          <?php snippet('slor-logo') ?>
+        </a>
+      </div>
+      <?php snippet('slor-appstore') ?>
     </header>
-    
-    <div class="section-spacing"></div>
-    
+
     <main>
+      <?php snippet('slor-ui-animation') ?>
+
+      <div class="section-spacing"></div>
+
       <div class="signup">
-        <?php snippet('slor-appstore') ?>
+
         <div>
           <?php snippet('slor-form') ?>
         </div>
         <p>Slør launches along with iOS 11 mid-September 2017.</p>
       </div>
-      
+
       <div class="section-spacing"></div>
 
       <div id="quotes" class="margin equal-columns">
