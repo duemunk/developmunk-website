@@ -1,13 +1,25 @@
 :root {
   --square-size: 20%;
+  --iphone-ratio: calc(1704 / 846 * 100%);
 }
 
-.demo-phone-bezel {
+.demo-phone-device {
   background-image: url('../../images/slor/phone.jpg');
-  background-size: cover;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: var(--iphone-ratio);
+}
+
+.demo-phone-device-content {
   padding: calc(50 / 423 * 100%) calc(24 / 423 * 100%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .demo-img-wrap {
@@ -17,7 +29,7 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  margin-bottom: var(--padding-large);
+  margin-bottom: calc(var(--padding-large) * 1.5);
 }
 
 .demo-focus {
