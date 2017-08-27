@@ -3,7 +3,7 @@
   <h1 class="demo-headline">Edit<br>Portrait Mode<br>Photos.</h1>
 
   <div class="demo-phone">
-    <div 
+    <div
       class="demo-phone-device"
       v-on:mouseover="stopRepeat"
       v-on:mouseleave="startRepeat"
@@ -11,14 +11,14 @@
       v-on:touchend="startRepeat">
       <div class="demo-phone-device-content">
         <div class="demo-img-wrap">
-          <div 
+          <div
             class="demo-focus demo-focus--top"
             v-on:click="setFocus(3)">
-            <div 
+            <div
               v-if="focus.position == 3"
               class="demo-focus-square"></div>
           </div>
-          <div 
+          <div
             class="demo-focus demo-focus--middle"
             v-on:click="setFocus(2)">
             <div class="demo-focus-square" v-if="focus.position == 2"></div>

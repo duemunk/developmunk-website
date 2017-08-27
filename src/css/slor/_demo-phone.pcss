@@ -1,6 +1,5 @@
 :root {
   --square-size: 20%;
-  --iphone-ratio: calc(1704 / 846 * 100%);
 }
 
 .demo-phone-device {
@@ -10,7 +9,7 @@
   position: relative;
   width: 100%;
   height: 0;
-  padding-top: var(--iphone-ratio);
+  padding-top: calc(var(--iphone-ratio) * 100%);
 }
 
 .demo-phone-device-content {
