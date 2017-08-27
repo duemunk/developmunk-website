@@ -42,11 +42,11 @@
   <div class="demo-text">
     <div v-bind:class="{ dimmed: !isBlurring }">
       <h2>Change Aperture.</h2>
-      <p>Change the aperture and see the amount of background blur adapt just as the bokeh effect on a DSLR.</p>
+      <p>Drag the slider to adjust the amount of out-of-focus blur.</p>
     </div>
     <div v-bind:class="{ dimmed: !isFocusing }">
       <h2>Change Focus.</h2>
-      <p>Move the focus point to any place in the photo. Quickly fix mistaken auto focus.</p>
+      <p>Tap anywhere on the photo to select what should be in focus.</p>
     </div>
   </div>
 
