@@ -2,19 +2,15 @@
 
 form {
   display: flex;
-  justify-content: center;
   margin: calc(var(--padding-default) * -0.5);
-  padding: var(--padding-default) 0;
 }
 
 input {
   border: none;
   border-radius: var(--border-radius);
   padding: var(--padding-default) calc(var(--padding-default) * 1.5);
-  font-family: var(--font-family);
-  font-size: var(--font-size-body);
+  font-size: inherit;
   font-weight: var(--font-weight-normal);
-  line-height: calc(var(--baseline) * 2);
   color: inherit;
   background-color: var(--color-overlay);
   min-width: 200px;
@@ -29,7 +25,7 @@ input {
   }
 
   &::placeholder {
-    font-weight: var(--font-weight);
+    font-weight: var(--font-weight-normal);
     color: var(--color-secondary);
     font-family: var(--font-family);
   }
@@ -45,5 +41,11 @@ input {
       background-color: var(--color-background);
       color: var(--color-accent);
     }
+  }
+
+  &[type=range] {
+    padding: 0;
+    margin: 0;
+    width: 100%;
   }
 }
