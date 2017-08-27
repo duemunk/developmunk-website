@@ -4,7 +4,7 @@
 
   <div class="demo-phone">
     <div 
-      id="demo-phone-bezel"
+      class="demo-phone-bezel"
       v-on:mouseover="stopRepeat"
       v-on:mouseleave="startRepeat"
       v-on:touchstart="stopRepeat"

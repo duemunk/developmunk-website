@@ -1,21 +1,13 @@
 :root {
-  --square-size: 15%;
+  --square-size: 20%;
 }
 
-#demo-phone-bezel {
+.demo-phone-bezel {
   background-image: url('../../images/slor/phone.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  padding-top: calc(50/423*100)%;
-  padding-left: calc(24/423*100)%;
-  padding-right: calc(24/423*100)%;
-  padding-bottom: calc(50/423*100)%;
-
-  input[type=range] {
-    margin-top: 40px;
-    height: 50px;
-  }
+  padding: calc(50 / 423 * 100%) calc(24 / 423 * 100%);
 }
 
 .demo-img-wrap {
@@ -25,12 +17,12 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  margin-bottom: var(--padding-large);
 }
 
 .demo-focus {
   position: absolute;
-  right: 0;
-  left: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,6 +46,6 @@
   width: var(--square-size);
   height: 0;
   padding-top: var(--square-size);
-  border: 2px solid var(--color-accent);
+  box-shadow: 0 0 0 4px var(--color-accent);
   border-radius: var(--border-radius);
 }
