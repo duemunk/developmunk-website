@@ -10,10 +10,10 @@
   </div>
 
   <div id="demo-phone" class="">
-    <div class="img-wrap">
-      <div class="focus focus--top"></div>
-      <div class="focus focus--middle"></div>
-      <div class="focus focus--bottom"></div>
+    <div class="demo-img-wrap">
+      <div class="demo-focus demo-focus--top"></div>
+      <div class="demo-focus demo-focus--middle"></div>
+      <div class="demo-focus demo-focus--bottom"></div>
       <img v-bind:src="'assets/images/slor/' + focus.amount + '.' + blur.amount + '.jpg'" />
     </div>
     <input 
