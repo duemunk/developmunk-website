@@ -6,9 +6,9 @@
     <div
       class="demo-phone-device"
       v-on:mouseover="stopRepeat"
-      v-on:mouseleave="startRepeat"
+      v-on:mouseleave="startRepeatAfterShortDelay"
       v-on:touchstart="stopRepeat"
-      v-on:touchend="startRepeat">
+      v-on:touchend="startRepeatAfterLongDelay">
       <div class="demo-phone-device-content">
         <div class="demo-img-wrap">
           <div

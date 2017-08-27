@@ -1,4 +1,5 @@
 var repeaterDelay = 1000;
+var longerDelay = 5000;
 
 var app = new Vue({
     el: '#app',
@@ -44,10 +45,15 @@ var app = new Vue({
                 this.animate()
             }.bind(this), repeaterDelay);
         },
-        startRepeat: function () {
+        startRepeatAfterShortDelay: function () {
             setTimeout(function(){
                 this.isAnimating = true;
             }.bind(this), repeaterDelay);
+        },
+        startRepeatAfterLongDelay: function () {
+            setTimeout(function(){
+                this.isAnimating = true;
+            }.bind(this), longerDelay);
         },
         stopRepeat: function () {
             this.isAnimating = false;
