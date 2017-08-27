@@ -12,6 +12,10 @@ body {
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
+
+  @media (--large-up) {
+    padding: var(--padding-giant);
+  }
 }
 
 h1 {
@@ -100,30 +104,21 @@ a {
   flex-flow: column wrap;
   margin: calc(var(--padding-giant) * -0.5);
 
+  @media (--medium-up) {
+    flex-direction: row;
+  }
+
   & > div {
     padding: calc(var(--padding-giant) * 0.5);
-  }
-}
 
-@media (--medium-up) {
-  .equal-columns {
-    flex-direction: row;
-
-    & > div {
+    @media (--medium-up) {
       flex-basis: 50%;
       flex-shrink: 0;
     }
-  }
-}
 
-@media (--large-up) {
-  body {
-    padding: var(--padding-giant);
-  }
-
-  .equal-columns {
-    & > div {
+    @media (--large-up) {
       flex-basis: 33%;
     }
   }
 }
+
