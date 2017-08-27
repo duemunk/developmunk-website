@@ -9,6 +9,10 @@
     'description'=>'Adjust the focal plane by tilting it, just like a super expensive tilt-shift lens does on a DSLR.'
   )) ?>
   <?php snippet('slor-feature', array(
+    'title'=>'Depth Map',
+    'description'=>'...'
+  )) ?>
+  <?php snippet('slor-feature', array(
     'title'=>'Photo Editing Extension',
     'description'=>'...'
   )) ?>
@@ -17,11 +21,11 @@
     'description'=>'... use original/edited. Duplicate, modify. Stores settings in library for later edits.'
   )) ?>
   <?php snippet('slor-feature', array(
-    'title'=>'Depth Map',
-    'description'=>'...'
+    'title'=>'High Quality',
+    'description'=>'Uses Apples state of the art filters ...actually a little bit better than the built in.'
   )) ?>
   <?php snippet('slor-feature', array(
-    'title'=>'High Quality',
-    'description'=>'...actually a little bit better than the built in.'
+    'title'=>'Good Citizen',
+    'description'=>'Localization, Dynamic Type, Voice Over, Smart Invert.'
   )) ?>
 </div>
