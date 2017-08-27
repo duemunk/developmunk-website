@@ -11,6 +11,7 @@ input {
   border: none;
   border-radius: var(--border-radius);
   padding: var(--padding-default) calc(var(--padding-default) * 1.5);
+  font-family: var(--font-family);
   font-size: var(--font-size-body);
   font-weight: var(--font-weight-normal);
   line-height: calc(var(--baseline) * 2);
@@ -28,8 +29,9 @@ input {
   }
 
   &::placeholder {
-    font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight);
     color: var(--color-secondary);
+    font-family: var(--font-family);
   }
 
   &[type=submit] {
