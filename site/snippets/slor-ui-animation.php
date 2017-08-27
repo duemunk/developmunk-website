@@ -1,10 +1,8 @@
 <div id="app">
 
-  <div id="demo-hero">
-    <h1>Edit<br>Portrait<br>Mode<br>Photos.</h1>
-  </div>
+  <h1 class="demo-headline">Edit<br>Portrait<br>Mode<br>Photos.</h1>
 
-  <div id="demo-phone" class="">
+  <div class="demo-phone">
     <div 
       id="demo-phone-bezel"
       v-on:mouseover="stopRepeat"
@@ -39,12 +37,12 @@
     </div>
   </div>
 
-  <div id="demo-text">
-    <div id="aperture" class="demo-text" v-bind:class="{ dimmed: !isBlurring }">
+  <div class="demo-text">
+    <div v-bind:class="{ dimmed: !isBlurring }">
       <h2>Change Aperture.</h2>
       <p>Change the aperture and see the amount of background blur adapt just as the bokeh effect on a DSLR.</p>
     </div>
-    <div id="focus" class="demo-text" v-bind:class="{ dimmed: !isFocusing }">
+    <div v-bind:class="{ dimmed: !isFocusing }">
       <h2>Change Focus.</h2>
       <p>Move the focus point to any place in the photo. Quickly fix mistaken auto focus.</p>
     </div>

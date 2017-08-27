@@ -9,14 +9,30 @@ body {
   line-height: calc(var(--baseline) * 2);
   letter-spacing: 0.04rem;
   padding: 2vmax 3vw;
+  position: relative;
   max-width: 1440px;
   margin: 0 auto;
 }
 
 h1 {
-  font-size: var(--font-size-hero);
+  font-size: var(--font-size-headline);
   font-weight: var(--font-weight-strong);
-  line-height: calc(var(--baseline) * 6);
+  line-height: calc(var(--baseline) * 4);
+
+  @media (--medium-up) {
+    font-size: var(--font-size-hero);
+    line-height: calc(var(--baseline) * 6);
+  }
+
+  @media (--large-up) {
+    font-size: var(--font-size-headline);
+    line-height: calc(var(--baseline) * 4);
+  }
+
+  @media (--xlarge-up) {
+    font-size: var(--font-size-hero);
+    line-height: calc(var(--baseline) * 6);
+  }
 }
 
 h2 {
@@ -40,7 +56,7 @@ a {
 }
 
 .section-spacing {
-  height: calc(var(--padding-giant) * 2);
+  height: calc(var(--padding-giant) * 2.5);
 }
 
 .signup {
@@ -63,13 +79,10 @@ a {
 .equal-columns {
   display: flex;
   flex-flow: column wrap;
-  margin-left: -var(--padding-giant);
-  margin-right: -var(--padding-giant);
+  margin: calc(var(--padding-giant) * -0.5);
 
   & > div {
-    padding-left: var(--padding-giant);
-    padding-right: var(--padding-giant);
-    margin-bottom: var(--padding-giant);
+    padding: calc(var(--padding-giant) * 0.5);
   }
 }
 
@@ -86,7 +99,7 @@ a {
 
 @media (--large-up) {
   body {
-    padding: 50px 70px;
+    padding: var(--padding-giant);
   }
 
   .equal-columns {

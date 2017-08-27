@@ -12,12 +12,8 @@
   <body>
 
     <header>
-      <div id="logo">
-        <a href="/slor">
-          <?php snippet('slor-logo') ?>
-        </a>
-      </div>
-      <?php snippet('slor-appstore') ?>
+      <?php snippet('slor-logo') ?>
+      <?php snippet('slor-logo-appstore') ?>
     </header>
 
     <main>
