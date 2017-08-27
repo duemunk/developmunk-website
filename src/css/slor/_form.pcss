@@ -29,18 +29,14 @@ input {
   color: inherit;
   background-color: var(--color-overlay);
 
-  &:focus {
-    outline: none;
-    background-color: var(--color-overlay);
-    box-shadow:
-      0 0 0 3px var(--color-background),
-      0 0 0 5px var(--color-overlay);
-  }
-
   &::placeholder {
     font-weight: var(--font-weight-normal);
     color: var(--color-secondary);
     font-family: inherit;
+  }
+
+  &:focus {
+    outline: none;
   }
 
   &[type=submit] {
@@ -56,13 +52,22 @@ input {
     }
   }
 
+  &:not([type=range]) {
+    &:focus {
+      background-color: var(--color-overlay);
+      box-shadow:
+        0 0 0 3px var(--color-background),
+        0 0 0 5px var(--color-overlay);
+    }
+  }
+
   &[type=range] {
     padding: 0;
     margin: 0;
     width: 100%;
     -webkit-appearance: none;
     background: transparent;
-    border: 1px solid var(--color-background); /* fix for FF unable to apply focus style bug */
+    border: 1px solid black; /* fix for FF unable to apply focus style bug */
 
     &::-ms-track {
       width: 100%;
@@ -91,7 +96,6 @@ input {
       cursor: pointer;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     }
-
 
     &::-webkit-slider-runnable-track {
       width: 100%;

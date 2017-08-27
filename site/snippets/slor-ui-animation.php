@@ -5,28 +5,37 @@
   </div>
 
   <div id="demo-phone" class="">
-    <div id="demo-phone-bezel">
+    <div 
+      id="demo-phone-bezel"
+      v-on:mouseover="stopRepeat"
+      v-on:mouseleave="startRepeat"
+      v-on:touchstart="stopRepeat"
+      v-on:touchend="startRepeat">
       <div class="demo-img-wrap">
-        <div class="demo-focus demo-focus--top">
-          <div class="demo-focus-square" v-if="focus.amount == 1"></div>
+        <div 
+          class="demo-focus demo-focus--top"
+          v-on:click="setFocus(1)">
+          <div 
+            v-if="focus.position == 1"
+            class="demo-focus-square"></div>
         </div>
-        <div class="demo-focus demo-focus--middle">
-          <div class="demo-focus-square"></div>
+        <div 
+          class="demo-focus demo-focus--middle"
+          v-on:click="setFocus(2)">
+          <div class="demo-focus-square" v-if="focus.position == 2"></div>
         </div>
-        <div class="demo-focus demo-focus--bottom">
-          <div class="demo-focus-square"></div>
+        <div
+          class="demo-focus demo-focus--bottom"
+          v-on:click="setFocus(3)">
+          <div class="demo-focus-square" v-if="focus.position == 3"></div>
         </div>
-        <img v-bind:src="'assets/images/slor/' + focus.amount + '.' + blur.amount + '.jpg'" />
+        <img v-bind:src="'assets/images/slor/' + focus.position + '.' + blur.amount + '.jpg'" />
       </div>
       <input
         type="range"
         v-model.number="blur.amount"
         v-bind:min="blur.min"
-        v-bind:max="blur.max"
-        v-on:mouseover="stopRepeat"
-        v-on:mouseleave="startRepeat"
-        v-on:touchstart="stopRepeat"
-        v-on:touchend="startRepeat">
+        v-bind:max="blur.max">
     </div>
   </div>
 
