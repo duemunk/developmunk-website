@@ -1,0 +1,17 @@
+#app {
+  display: flex;
+  align-items: center;
+
+  & > div {
+    flex-basis: 300px;
+  }
+
+  & > :nth-child(1),
+  & > :nth-child(3) {
+    flex-grow: 1;
+  }
+}
+
+.focus {
+  position: absolute;
+}

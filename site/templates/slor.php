@@ -7,49 +7,26 @@
     <meta name="description" content="<?php echo $site->description()->html() ?>">
     <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
     <?php echo css('assets/css/slor/slor.css') ?>
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <?php echo js('//unpkg.com/vue') ?>
   </head>
   <body>
 
     <header>
-      <div id="logo">
-        <a href="/slor">
-          <?php snippet('slor-logo') ?>
-        </a>
-      </div>
-      <div id="appstore">
-        <a href=""> <!-- TODO: Add link to appstore -->
-          <?php snippet('slor-appstore') ?>
-        </a>
-      </div>
+      <?php snippet('slor-ui-animation') ?>
     </header>
-
+    
+    <div class="section-spacing"></div>
+    
     <main>
-      <div id="demo">
-        <div id="demo-hero">
-          <h1>Edit<br>Depth<br>Effect<br>Photos.</h1>
+      <div class="signup">
+        <?php snippet('slor-appstore') ?>
+        <div>
+          <?php snippet('slor-form') ?>
         </div>
-
-        <div id="demo-phone" class="">
-          <?php snippet('slor-demo') ?>
-        </div>
-
-        <div id="demo-text">
-          <div id="aperture">
-            <h2>Change Aperture.</h2>
-            <p>Change the aperture and see the amount of background blur adapt just a the bokeh effect on a DSLR.</p>
-          </div>
-          <div id="focus" class="dimmed">
-            <h2>Change Focus.</h2>
-            <p>Move the focus point to any place in the photo. Quickly fix mistaken auto focus.</p>
-          </div>
-        </div>
+        <p>Slør launches along with iOS 11 mid-September 2017.</p>
       </div>
-
-      <?php snippet('slor-form') ?>
-
-      <p>Slør launches along with iOS 11 mid-September 2017.</p>
+      
+      <div class="section-spacing"></div>
 
       <div id="quotes" class="margin equal-columns">
         <div class="quote">

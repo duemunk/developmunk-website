@@ -1,5 +1,9 @@
 @import './_settings.pcss';
 
+:root {
+  --range-thumb-size: 30px;
+}
+
 form {
   display: flex;
   flex-flow: column wrap;
@@ -20,7 +24,6 @@ input {
   padding: var(--padding-default) calc(var(--padding-default) * 1.5);
   font-size: inherit;
   font-weight: var(--font-weight-normal);
-  line-height: calc(var(--baseline) * 2);
   color: inherit;
   background-color: var(--color-overlay);
 
@@ -48,6 +51,61 @@ input {
     &:hover {
       background-color: var(--color-background);
       color: var(--color-accent);
+    }
+  }
+
+  &[type=range] {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    -webkit-appearance: none;
+    background: transparent;
+    border: 1px solid var(--color-background); /* fix for FF unable to apply focus style bug */
+
+    &::-ms-track {
+      width: 100%;
+      cursor: pointer;
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: var(--range-thumb-size);
+      width: var(--range-thumb-size);
+      border-radius: 50%;
+      background: var(--color-primary);
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      transform: translateY(-50%);
+    }
+
+    &::-moz-range-thumb {
+      height: var(--range-thumb-size);
+      width: var(--range-thumb-size);
+      border-radius: 50%;
+      background: var(--color-primary);
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    
+    &::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 2px;
+      cursor: pointer;
+      background: var(--color-accent);
+      border-radius: 1px;
+    }
+
+    &::-moz-range-track {
+        width: 100%;
+        height: 2px;
+        cursor: pointer;
+        background: var(--color-accent);
+        border-radius: 1px;
+      }
     }
   }
 }

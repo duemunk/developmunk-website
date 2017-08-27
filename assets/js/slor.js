@@ -13,21 +13,27 @@ var app = new Vue({
             max: 3,
             amount: 1
         },
-        isAnimating: true
+        isAnimating: true,
+        isBlurring: true,
+        isFocusing: false
     },
     methods: {
         animate: function () {
             this.blur.amount = parseInt(this.blur.amount);
             if (this.isAnimating) {
-                if (this.blur.amount === this.blur.max) {
-                    if (this.focus.amount === this.focus.max) {
+                if (this.blur.amount !== this.blur.max) {
+                    this.blur.amount += 1
+                } else {
+                    this.isBlurring = false;
+                    this.isFocusing = true;
+                    if (this.focus.amount !== this.focus.max) {
+                        this.focus.amount += 1
+                    } else {
+                        this.isBlurring = true;
+                        this.isFocusing = false;
                         this.resetBlur();
                         this.resetFocus();
-                    } else {
-                        this.focus.amount += 1
                     }
-                } else {
-                    this.blur.amount += 1
                 }
             }
             this.repeater();

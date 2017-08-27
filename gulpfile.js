@@ -25,7 +25,7 @@ gulp.task('browser-sync',
         browserSync.init({
             proxy: '127.0.0.1:3000',
             port: 8080,
-            open: true,
+            open: false,
             notify: false,
             snippetOptions: {
                 ignorePaths: ["./panel/**"]
@@ -35,7 +35,8 @@ gulp.task('browser-sync',
 );
 
 gulp.task('watch', function () {
-    gulp.watch(['./src/css/**/*.pcss'], ['css']).on('change', reload);
+    gulp.watch(['./src/css/**/*.pcss'], ['css']);
+    gulp.watch(['./assets/css/**/*.css']).on('change', reload);
     gulp.watch(['./site/**/*.php']).on('change', reload);
 });
 

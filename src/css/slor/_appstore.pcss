@@ -1,13 +1,15 @@
-#appstore {
-  position: relative;
-  width: 130px;
-  height: 53px;
+:root {
+  --ratio: calc(135 / 40);
+  --height: calc(var(--baseline) * 4);
 }
 
-#appstore svg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+#appstore {
+  & a {
+    display: flex;
+  }
+}
+
+.appstore-svg {
+  height: var(--height);
+  width: calc(var(--height) * var(--ratio));
 }
