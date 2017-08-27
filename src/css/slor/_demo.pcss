@@ -1,4 +1,6 @@
-
+:root {
+  --square-size: 15%;
+}
 
 #demo-phone-bezel {
   background-image: url('../../images/slor/phone.jpg');
@@ -10,16 +12,47 @@
   padding-right: calc(24/423*100)%;
   padding-bottom: calc(50/423*100)%;
 
-  .demo-img-wrap {
-    display: flex;
-    align-items: flex-start;
-    border-radius: var(--border-radius);
-    position: relative;
-    overflow: hidden;
-  }
-
   input[type=range] {
     margin-top: 40px;
     height: 50px;
   }
+}
+
+.demo-img-wrap {
+  display: flex;
+  align-items: flex-start;
+  border-radius: var(--border-radius);
+  position: relative;
+  overflow: hidden;
+}
+
+.demo-focus {
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% / 3);
+
+  &--top {
+    top: 0;
+  }
+
+  &--middle {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &--bottom {
+    bottom: 0;
+  }
+}
+
+.demo-focus-square {
+  width: var(--square-size);
+  height: 0;
+  padding-top: var(--square-size);
+  border: 2px solid var(--color-accent);
+  border-radius: var(--border-radius);
 }
