@@ -47,6 +47,8 @@
         </div>
       </div>
 
+      <div class="section-spacing"></div>
+
       <div id="features" class="equal-columns">
         <div class="feature">
           <h3>Lens Blur.</h3>
