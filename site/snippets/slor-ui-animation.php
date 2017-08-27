@@ -1,6 +1,6 @@
 <div id="app">
 
-  <h1 class="demo-headline">Edit<br>Portrait<br>Mode<br>Photos.</h1>
+  <h1 class="demo-headline">Edit<br>Portrait Mode<br>Photos.</h1>
 
   <div class="demo-phone">
     <div 
