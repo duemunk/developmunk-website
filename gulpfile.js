@@ -10,6 +10,7 @@ const cssImport    = require('postcss-import');
 const cssVariables = require('postcss-custom-properties');
 const cssCalc      = require('postcss-calc');
 const cssNested    = require('postcss-nested');
+const cssMedia     = require('postcss-custom-media');
 
 const reload       = browserSync.reload;
 
@@ -48,6 +49,7 @@ gulp.task('css', function () {
                 cssVariables(),
                 cssCalc(),
                 cssNested(),
+                cssMedia(),
                 autoprefixer()
             ]
         ))

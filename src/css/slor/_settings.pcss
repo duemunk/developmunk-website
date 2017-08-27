@@ -9,13 +9,14 @@
   --padding-default: 12px;
   --padding-large: 20px;
   --padding-giant: 50px;
-  --font-family:  -apple-system, BlinkMacSystemFont, HelveticaNeue, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family: -apple-system, BlinkMacSystemFont, HelveticaNeue, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-weight-normal: 500;
   --font-weight-strong: 800;
   --font-size-body: 17px;
   --font-size-subheadline: 25px;
   --font-size-headline: 36px;
   --font-size-hero: 70px;
-  --media-break-medium: 600px;
-  --media-break-large: 900px;
 }
+
+@custom-media --medium-up (min-width: 600px);
+@custom-media --large-up (min-width: 900px);
