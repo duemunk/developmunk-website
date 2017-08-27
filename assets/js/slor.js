@@ -24,9 +24,10 @@ var app = new Vue({
                 if (this.blur.amount !== this.blur.max) {
                     this.blur.amount += 1
                 } else {
-                    this.isBlurring = false;
-                    this.isFocusing = true;
-                    if (this.focus.position !== this.focus.max) {
+                    if (this.isBlurring) {
+                        this.isBlurring = false;
+                        this.isFocusing = true;
+                    } else if (this.focus.position !== this.focus.max) {
                         this.focus.position += 1
                     } else {
                         this.isBlurring = true;
