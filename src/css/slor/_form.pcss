@@ -44,13 +44,20 @@ input {
     background-color: var(--color-accent);
     cursor: pointer;
 
-    &:hover {
+    &:hover:not(:focus) {
       background-color: var(--color-background);
       color: var(--color-accent);
     }
+
+    &:focus {
+      box-shadow:
+        0 0 0 3px var(--color-background),
+        0 0 0 5px var(--color-accent);
+    }
   }
 
-  &:not([type=range]) {
+  &[type=text],
+  &[type=email] {
     &:focus {
       background-color: var(--color-overlay);
       box-shadow:
