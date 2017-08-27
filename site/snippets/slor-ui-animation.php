@@ -13,9 +13,9 @@
         <div class="demo-img-wrap">
           <div 
             class="demo-focus demo-focus--top"
-            v-on:click="setFocus(1)">
+            v-on:click="setFocus(3)">
             <div 
-              v-if="focus.position == 1"
+              v-if="focus.position == 3"
               class="demo-focus-square"></div>
           </div>
           <div 
@@ -25,8 +25,8 @@
           </div>
           <div
             class="demo-focus demo-focus--bottom"
-            v-on:click="setFocus(3)">
-            <div class="demo-focus-square" v-if="focus.position == 3"></div>
+            v-on:click="setFocus(1)">
+            <div class="demo-focus-square" v-if="focus.position == 1"></div>
           </div>
           <img v-bind:src="'assets/images/slor/' + focus.position + '.' + blur.amount + '.jpg'" />
         </div>
