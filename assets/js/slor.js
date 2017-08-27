@@ -11,7 +11,7 @@ var app = new Vue({
         focus: {
             min: 1,
             max: 3,
-            amount: 1
+            position: 1
         },
         isAnimating: true,
         isBlurring: true,
@@ -26,8 +26,8 @@ var app = new Vue({
                 } else {
                     this.isBlurring = false;
                     this.isFocusing = true;
-                    if (this.focus.amount !== this.focus.max) {
-                        this.focus.amount += 1
+                    if (this.focus.position !== this.focus.max) {
+                        this.focus.position += 1
                     } else {
                         this.isBlurring = true;
                         this.isFocusing = false;
@@ -55,7 +55,12 @@ var app = new Vue({
             this.blur.amount = this.blur.min;
         },
         resetFocus: function () {
-            this.focus.amount = this.focus.min;
+            this.focus.position = this.focus.min;
+        },
+        setFocus: function (position) {
+            this.focus.position = position;
+            this.isBlurring = false;
+            this.isFocusing = true;
         }
     },
     created: function () {
