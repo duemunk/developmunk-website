@@ -26,10 +26,7 @@
       <div class="section-spacing"></div>
 
       <div class="signup">
-
-        <div>
-          <?php snippet('slor-form') ?>
-        </div>
+        <?php snippet('slor-form') ?>
         <p>Slør launches along with iOS 11 mid-September 2017.</p>
       </div>
 
