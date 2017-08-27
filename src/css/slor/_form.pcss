@@ -2,23 +2,27 @@
 
 form {
   display: flex;
-  justify-content: center;
-  margin: calc(var(--padding-default) * -0.5);
-  padding: var(--padding-default) 0;
+  flex-flow: column wrap;
+
+  margin-left: calc(-var(--padding-default)/2);
+  margin-right: calc(-var(--padding-default)/2);
+
+  input {
+    margin-left: calc(var(--padding-default)/2);
+    margin-right: calc(var(--padding-default)/2);
+    margin-bottom: var(--padding-default);
+  }
 }
 
 input {
   border: none;
   border-radius: var(--border-radius);
   padding: var(--padding-default) calc(var(--padding-default) * 1.5);
-  font-family: var(--font-family);
-  font-size: var(--font-size-body);
+  font-size: inherit;
   font-weight: var(--font-weight-normal);
   line-height: calc(var(--baseline) * 2);
   color: inherit;
   background-color: var(--color-overlay);
-  min-width: 200px;
-  margin: calc(var(--padding-default) * 0.5);
 
   &:focus {
     outline: none;
@@ -29,9 +33,9 @@ input {
   }
 
   &::placeholder {
-    font-weight: var(--font-weight);
+    font-weight: var(--font-weight-normal);
     color: var(--color-secondary);
-    font-family: var(--font-family);
+    font-family: inherit;
   }
 
   &[type=submit] {
@@ -44,6 +48,26 @@ input {
     &:hover {
       background-color: var(--color-background);
       color: var(--color-accent);
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  form {
+    flex-direction: row;
+    justify-content: center;
+
+    input {
+      &[type=submit] {
+          flex-basis: 200px;
+      }
+      &[type=email],
+      &[type=text]
+      {
+        flex-basis: 200px;
+        max-width: 440px;
+        flex-grow: 1;
+      }
     }
   }
 }
