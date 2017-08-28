@@ -11,6 +11,7 @@ const cssVariables = require('postcss-custom-properties');
 const cssCalc      = require('postcss-calc');
 const cssNested    = require('postcss-nested');
 const cssMedia     = require('postcss-custom-media');
+const cssGradients = require('postcss-easing-gradients');
 
 const reload       = browserSync.reload;
 
@@ -50,6 +51,7 @@ gulp.task('css', function () {
                 cssCalc(),
                 cssNested(),
                 cssMedia(),
+                cssGradients(),
                 autoprefixer()
             ]
         ))
