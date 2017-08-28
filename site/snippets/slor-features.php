@@ -6,26 +6,34 @@
   )) ?>
   <?php snippet('slor-feature', array(
     'title'=>'Tilt',
-    'description'=>'Adjust the focal plane by tilting it, just like a super expensive tilt-shift lens does on a DSLR.'
+    'description'=>'Adjust the focal plane by tilting it, just like a tilt-shift lens does on a DSLR.'
   )) ?>
   <?php snippet('slor-feature', array(
     'title'=>'Depth Map',
-    'description'=>'...'
+    'description'=>'Preview depth data with a simple long press and quickly see how radial and tilt affects it.'
   )) ?>
   <?php snippet('slor-feature', array(
     'title'=>'Photo Editing Extension',
-    'description'=>'...'
+    'description'=>'Edit your Portrait Mode photos directly from Photos.app.editStores settings in library for later edits.'
   )) ?>
   <?php snippet('slor-feature', array(
-    'title'=>'Deep iOS Integration',
-    'description'=>'... use original/edited. Duplicate, modify. Stores settings in library for later edits.'
+    'title'=>'Adaptable Workflow',
+    'description'=>'Choose whether open original or edited photos and whether to save as duplicate or modify.'
+  )) ?>
+  <?php snippet('slor-feature', array(
+    'title'=>'Saved Edits',
+    'description'=>'All parameters for edits in Slør are stored in Photos.app along with the edited photo. Enables quick tweaks of previously edited photos.'
   )) ?>
   <?php snippet('slor-feature', array(
     'title'=>'High Quality',
-    'description'=>'Uses Apples state of the art filters ...actually a little bit better than the built in.'
+    'description'=>'Uses the same algorithms as Apple\'s state of the art Portrait Mode, but tweaked for an even higher quality output.'
   )) ?>
   <?php snippet('slor-feature', array(
-    'title'=>'Good Citizen',
-    'description'=>'Localization, Dynamic Type, Voice Over, Smart Invert.'
+    'title'=>'Accessibility',
+    'description'=>'Adapts font size with Dynamic Type, improves visibility with Smart Invert, and has supportive Voice Over.'
+  )) ?>
+  <?php snippet('slor-feature', array(
+    'title'=>'Localization',
+    'description'=>'Localized in Spanish, German, French, Russian, English, Norwegian, Swedish, and Danish.'
   )) ?>
 </div>
