@@ -1,5 +1,8 @@
 @import './_settings.pcss';
 
+html {
+  overflow-x: hidden;
+}
 body {
   font-family: var(--font-family);
   color: var(--color-primary);
@@ -12,6 +15,7 @@ body {
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
+  overflow-x: hidden;
 
   @media (--large-up) {
     padding: var(--padding-giant);
