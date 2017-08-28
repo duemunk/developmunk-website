@@ -26,7 +26,7 @@
   )) ?>
   <?php snippet('slor-feature', array(
     'title'=>'High Quality',
-    'description'=>'Uses the same algorithms as Apple\'s state of the art Portrait Mode, but tweaked for an even higher quality output.'
+    'description'=>'Uses the same algorithms as Apple\'s state of the art Portrait Mode, tweaked for an even higher quality output.'
   )) ?>
   <?php snippet('slor-feature', array(
     'title'=>'Accessibility',
