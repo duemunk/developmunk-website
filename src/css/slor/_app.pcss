@@ -27,12 +27,10 @@
 
 .demo-phone {
   width: 100%;
+  /* ViewportHeight / Ratio - app padding * 2 + body padding */
+  max-width: calc((100vh / var(--iphone-ratio)) + var(--padding-large) * 2 - var(--padding-giant));
+  min-width: 200px;
   flex-basis: 423px;
-
-  @media (--medium-up) {
-    /* ViewportHeight / Ratio - app padding * 2 + body padding */
-    max-width: calc((100vh / var(--iphone-ratio)) + var(--padding-large) * 2 - var(--padding-giant));
-  }
 }
 
 .demo-text {
