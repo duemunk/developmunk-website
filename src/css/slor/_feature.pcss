@@ -3,9 +3,13 @@
   justify-content: space-between;
 
   .checkmark {
-    margin-top: 6px;
-    flex-basis: 50px;
+    margin-top: 9px;
     flex-shrink: 0;
+    margin-right: calc(30-21)px;
+
+    @media (--medium-up) {
+      margin-right: calc(40-21)px;
+    }
   }
 
   .text {

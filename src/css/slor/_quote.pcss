@@ -12,8 +12,16 @@
   p.quotation {
     font-size: 70px;
     margin-top: 10px;
-    flex-basis: 50px;
+    margin-left: -4px;
+    margin-right: 4px;
     flex-shrink: 0;
+    color: var(--color-primary);
+
+    flex-basis: 30px;
+
+    @media (--medium-up) {
+      flex-basis: 40px;
+    }
   }
 
   .text {
