@@ -31,5 +31,9 @@
 
       <?php snippet('slor-features') ?>
     </main>
+
+    <footer>
+       <?php snippet('slor-footer') ?>
+    </footer>
   </body>
 </html>
