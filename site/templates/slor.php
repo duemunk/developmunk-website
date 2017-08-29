@@ -27,9 +27,12 @@
 
       <!-- <?php snippet('slor-quotes') ?> -->
 
-      <div class="section-spacing"></div>
+      <?php snippet('slor-section-image', array('id'=>'fish')) ?>
 
       <?php snippet('slor-features') ?>
+
+      <?php snippet('slor-section-image', array('id'=>'tree')) ?>
+
     </main>
 
     <footer>
