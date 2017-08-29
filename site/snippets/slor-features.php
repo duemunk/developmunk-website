@@ -1,39 +1,27 @@
 
 <div id="features" class="equal-columns">
   <?php snippet('slor-feature', array(
-    'title'=>'Lens Blur',
-    'description'=>'Add a radial effect for blurring everything around the subject for dramatic effect.'
-  )) ?>
-  <?php snippet('slor-feature', array(
-    'title'=>'Tilt',
-    'description'=>'Adjust the focal plane by tilting it, just like a tilt-shift lens does on a DSLR.'
+    'title'=>'Combine Effects',
+    'description'=>'Use tilt-shift and radial lens along with Portrait Mode blur for a combined beautiful effect.'
   )) ?>
   <?php snippet('slor-feature', array(
     'title'=>'Depth Map',
-    'description'=>'Preview depth data with a simple long press and quickly see how radial and tilt affects it.'
+    'description'=>'Preview depth information with a simple long press and quickly see how radial and tilt affects it.'
   )) ?>
   <?php snippet('slor-feature', array(
-    'title'=>'Photo Editing Extension',
-    'description'=>'Edit your Portrait Mode photos directly from Photos.app. Stores settings in library for later edits.'
-  )) ?>
-  <?php snippet('slor-feature', array(
-    'title'=>'Adaptable Workflow',
-    'description'=>'Choose whether open original or edited photos and whether to save as duplicate or modify.'
+    'title'=>'Deep iOS Integration',
+    'description'=>'Photo Editing Extension to edit photos directly from Photos. Open original or edited photo and save as duplicate or a non-destructive modify.'
   )) ?>
   <?php snippet('slor-feature', array(
     'title'=>'Saved Edits',
-    'description'=>'All parameters for edits in Slør are stored in Photos.app along with the edited photo. Enables quick tweaks of previously edited photos.'
+    'description'=>'All parameters for edits in Slør are stored in Photos. Enables quick tweaks of previously edited photos.'
   )) ?>
   <?php snippet('slor-feature', array(
     'title'=>'High Quality',
-    'description'=>'Uses the same algorithms as Apple\'s state of the art Portrait Mode, tweaked for an even higher quality output.'
+    'description'=>'Slør uses the same algorithms as Apple\'s state of the art Portrait Mode, tweaked for an even higher quality output.'
   )) ?>
   <?php snippet('slor-feature', array(
     'title'=>'Accessible',
-    'description'=>'Adaptable font sizes, Smart Invert, and Voice Over support.'
-  )) ?>
-  <?php snippet('slor-feature', array(
-    'title'=>'Localization',
-    'description'=>'Localized in Spanish, German, French, Russian, English, Norwegian, Swedish, and Danish.'
+    'description'=>'Adaptable font sizes, Smart Invert, and Voice Over support. Translated in to 🇪🇸 🇫🇷 🇩🇪 🇷🇺 🇳🇴 🇸🇪 🇩🇰.'
   )) ?>
 </div>
