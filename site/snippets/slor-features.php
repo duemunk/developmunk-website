@@ -6,11 +6,11 @@
   )) ?>
   <?php snippet('slor-feature', array(
     'title'=>'Depth Map',
-    'description'=>'Preview depth information with a simple long press and quickly see how radial and tilt affects it.'
+    'description'=>'Preview depth information with a quick 3D Touch to quickly see how radial and tilt affects it.'
   )) ?>
   <?php snippet('slor-feature', array(
     'title'=>'Deep iOS Integration',
-    'description'=>'Photo Editing Extension to edit photos directly from Photos. Open original or edited photo and save as duplicate or a non-destructive modify.'
+    'description'=>'Photo Editing Extension to edit photos directly from Photos. Open original or edited photo and save as duplicate or a non-destructive modification.'
   )) ?>
   <?php snippet('slor-feature', array(
     'title'=>'Saved Edits',
@@ -22,6 +22,6 @@
   )) ?>
   <?php snippet('slor-feature', array(
     'title'=>'Accessible',
-    'description'=>'Adaptable font sizes, Smart Invert, and Voice Over support. Translated in to 🇪🇸 🇫🇷 🇩🇪 🇷🇺 🇳🇴 🇸🇪 🇩🇰.'
+    'description'=>'Adaptable font sizes, Smart Invert, and Voice Over support. Available in 🇪🇸 🇫🇷 🇩🇪 🇷🇺 🇳🇴 🇸🇪 🇩🇰.'
   )) ?>
 </div>
