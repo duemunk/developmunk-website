@@ -1,11 +1,17 @@
 footer {
-  margin-top: var(--padding-section);
+  padding-top: var(--padding-section);
   padding-bottom: var(--padding-section);
   text-align: center;
   line-height: calc(var(--baseline) * 4);
+  /* Released */
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+  width: 100vw;
+
 
   background: scrim-gradient(
-    transparent,
+    var(--color-background),
     black
   );
 }
