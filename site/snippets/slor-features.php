@@ -14,7 +14,7 @@
   )) ?>
   <?php snippet('slor-feature', array(
     'title'=>'Photo Editing Extension',
-    'description'=>'Edit your Portrait Mode photos directly from Photos.app.editStores settings in library for later edits.'
+    'description'=>'Edit your Portrait Mode photos directly from Photos.app. Stores settings in library for later edits.'
   )) ?>
   <?php snippet('slor-feature', array(
     'title'=>'Adaptable Workflow',
@@ -29,8 +29,8 @@
     'description'=>'Uses the same algorithms as Apple\'s state of the art Portrait Mode, tweaked for an even higher quality output.'
   )) ?>
   <?php snippet('slor-feature', array(
-    'title'=>'Accessibility',
-    'description'=>'Adapts font size with Dynamic Type, improves visibility with Smart Invert, and has supportive Voice Over.'
+    'title'=>'Accessible',
+    'description'=>'Adaptable font sizes, Smart Invert, and Voice Over support.'
   )) ?>
   <?php snippet('slor-feature', array(
     'title'=>'Localization',
