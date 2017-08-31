@@ -2,6 +2,17 @@
 
   <h1 class="demo-headline">Edit<br>Portrait Mode<br>Photos.</h1>
 
+  <div class="demo-text">
+    <div v-bind:class="{ dimmed: !isBlurring }">
+      <h2>Aperture.</h2>
+      <p>Drag the slider to adjust the amount of out-of-focus blur.</p>
+    </div>
+    <div v-bind:class="{ dimmed: !isFocusing }">
+      <h2>Focus.</h2>
+      <p>Tap anywhere on the photo to select what should be in focus.</p>
+    </div>
+  </div>
+
   <div class="demo-phone">
     <div
       class="demo-phone-device"
@@ -36,17 +47,6 @@
           v-bind:min="blur.min"
           v-bind:max="blur.max">
       </div>
-    </div>
-  </div>
-
-  <div class="demo-text">
-    <div v-bind:class="{ dimmed: !isBlurring }">
-      <h2>Change Aperture.</h2>
-      <p>Drag the slider to adjust the amount of out-of-focus blur.</p>
-    </div>
-    <div v-bind:class="{ dimmed: !isFocusing }">
-      <h2>Change Focus.</h2>
-      <p>Tap anywhere on the photo to select what should be in focus.</p>
     </div>
   </div>
 

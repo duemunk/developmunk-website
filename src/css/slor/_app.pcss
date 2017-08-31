@@ -22,6 +22,11 @@
     min-width: unset;
     flex-grow: 1;
     flex-basis: 0;
+
+  }
+
+  @media (--medium-up) {
+    order: 0;
   }
 }
 
@@ -31,12 +36,20 @@
   max-width: calc((100vh / var(--iphone-ratio)) + var(--padding-large) * 2 - var(--padding-giant));
   min-width: 200px;
   flex-basis: 423px;
+
+  @media (--medium-up) {
+    order: 1;
+  }
 }
 
 .demo-text {
+  min-width: 100%;
+
   @media (--medium-up) {
+    min-width: unset;
     flex-grow: 1;
     flex-basis: 0;
+    order: 2;
   }
 
   & > div:first-child {
