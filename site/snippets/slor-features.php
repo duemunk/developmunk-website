@@ -22,6 +22,6 @@
   )) ?>
   <?php snippet('slor-feature', array(
     'title'=>'Accessible',
-    'description'=>'Adaptable font sizes, Smart Invert, and Voice Over support. Available in 🇪🇸 🇫🇷 🇩🇪 🇷🇺 🇳🇴 🇸🇪 🇩🇰.'
+    'description'=>'Adaptable font sizes, Smart Invert, and Voice Over support. Available in 🇬🇧 🇪🇸 🇫🇷 🇩🇪 🇷🇺 🇳🇴 🇸🇪 🇩🇰.'
   )) ?>
 </div>
