@@ -2,7 +2,7 @@
 
 :root {
   --range-thumb-size: 30px;
-  --range-thumb-max_size: 5vh;
+  --range-thumb-max_size: 5vw;
   --range-thumb-color: var(--color-primary);
   --range-thumb-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   --range-track-size: 3px;
@@ -12,17 +12,17 @@ form {
   width: 100%;
   display: flex;
   flex-flow: column wrap;
-  margin: calc(var(--padding-default) / -2);
+  margin: calc(var(--padding-base) / -2);
 
   input {
-    margin: calc(var(--padding-default) / 2);
+    margin: calc(var(--padding-base) / 2);
   }
 }
 
 input {
   border: none;
   border-radius: var(--border-radius);
-  padding: var(--padding-default) calc(var(--padding-default) * 1.5);
+  padding: var(--padding-base) calc(var(--padding-base) * 1.5);
   font-size: inherit;
   font-weight: var(--font-weight-normal);
   color: inherit;
@@ -130,8 +130,9 @@ input {
 
     input {
       &[type=submit] {
-          flex-basis: 200px;
+        flex-basis: 200px;
       }
+
       &[type=email],
       &[type=text] {
         flex-basis: 200px;

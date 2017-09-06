@@ -3,6 +3,7 @@
 html {
   overflow-x: hidden;
 }
+
 body {
   font-family: var(--font-family);
   color: var(--color-primary);
@@ -20,9 +21,9 @@ body {
   overflow-x: hidden;
 
   @media (--large-up) {
-    padding-top: var(--padding-giant);
-    padding-left: var(--padding-giant);
-    padding-right: var(--padding-giant);
+    padding-top: var(--padding-xxlarge);
+    padding-left: var(--padding-xxlarge);
+    padding-right: var(--padding-xxlarge);
   }
 }
 
@@ -81,9 +82,10 @@ h3 {
 a {
   text-decoration: none;
   color: var(--color-primary);
-}
-a:hover {
-  color: var(--color-secondary);
+
+  &:hover {
+    color: var(--color-secondary);
+  }
 }
 
 p {
@@ -95,41 +97,45 @@ p {
 }
 
 .section-spacing {
-  height: calc(var(--padding-section));
+  height: var(--padding-section);
+  max-height: var(--padding-section-max);
 }
 
 .signup {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: calc(var(--padding-default) * -0.5);
+  margin: calc(var(--padding-base) * -0.5);
 
   & > div {
-    padding: calc(var(--padding-default) * 0.5);
+    padding: calc(var(--padding-base) * 0.5);
   }
 
   & > p {
-    margin-bottom: var(--padding-default);
-    flex-basis: 100%;
-    text-align: center;
+    margin-bottom: var(--padding-base);
+    padding-right: calc(var(--padding-base) / 2);
+    padding-left: calc(var(--padding-base) / 2);
+    flex-basis: calc(640px + var(--padding-base) * 3);
   }
 }
 
 .equal-columns {
   display: flex;
   flex-flow: column wrap;
-  margin: calc(var(--padding-giant) * -0.5);
+  margin: calc(var(--padding-xlarge) * -0.5);
 
   @media (--medium-up) {
     flex-direction: row;
+    margin: calc(var(--padding-xxlarge) * -0.5);
   }
 
   & > div {
-    padding: calc(var(--padding-giant) * 0.5);
+    padding: calc(var(--padding-xlarge) * 0.5);
 
     @media (--medium-up) {
       flex-basis: 50%;
       flex-shrink: 0;
+      padding: calc(var(--padding-xxlarge) * 0.5);
     }
 
     @media (--large-up) {

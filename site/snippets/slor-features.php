@@ -1,4 +1,3 @@
-
 <div id="features" class="equal-columns">
   <?php snippet('slor-feature', array(
     'title'=>'Combine Effects',

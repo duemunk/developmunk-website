@@ -1,6 +1,6 @@
 <div class="signup">
     <p>Get notifed when Slør launches in mid-September 2017.</p>
-    <form 
+    <form
     action="//developmunk.us16.list-manage.com/subscribe/post?u=6355a7613325da59aa82b5576&amp;id=7d906bb182"
     method="post"
     name="mc-embedded-subscribe-form"

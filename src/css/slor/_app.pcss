@@ -32,12 +32,14 @@
 
 .demo-phone {
   width: 100%;
-  /* ViewportHeight / Ratio - app padding * 2 + body padding */
-  max-width: calc((100vh / var(--iphone-ratio)) + var(--padding-large) * 2 - var(--padding-giant));
   min-width: 200px;
+  max-width: 70vw;
   flex-basis: 423px;
+  perspective: 2000px;
 
   @media (--medium-up) {
+    /* ViewportHeight / Ratio - app padding * 2 + body padding */
+    max-width: calc((100vh / var(--iphone-ratio)) + var(--padding-large) * 2 - var(--padding-xxlarge));
     order: 1;
   }
 }
