@@ -18,8 +18,7 @@
       class="demo-phone-device"
       v-on:mouseover="stopRepeat"
       v-on:mouseleave="startRepeatAfterShortDelay"
-      v-on:touchstart="stopRepeat"
-      v-on:touchend="startRepeatAfterLongDelay">
+      v-on:touchstart="stopRepeat">
       <div class="demo-phone-device-content">
         <div class="demo-img-wrap">
           <div
