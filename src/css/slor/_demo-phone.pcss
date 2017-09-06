@@ -12,6 +12,7 @@
   padding-top: calc(var(--iphone-ratio) * 100%);
   transform-style: preserve-3d;
   transition: transform 0.4s ease;
+  backface-visibility: hidden; /* Avoid flicker */
 
   &:hover {
     transform: rotateY(5deg);
