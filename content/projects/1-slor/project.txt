@@ -1,0 +1,21 @@
+Title: Slør
+
+----
+
+Year: 2017
+
+----
+
+Excerpt: (link: http://developmunk.dk/slor text: Slør) gives dual camera iPhones super powers by using the depth information available in Portrait Mode photos in iOS 11.  It lets you tweak the background blur and adjust what's in focus. Additionally the focal plane can be tilted as well as distorted radially for an even more dramatic effect.
+
+----
+
+Text: <p class="margin">(link: https://itunes.apple.com/app/id1253636766 text: Slør) gives dual camera iPhones super powers by using the depth information available in Portrait Mode photos in iOS 11.  It lets you tweak the background blur and adjust what's in focus. Additionally the focal plane can be tilted as well as distorted radially for an even more dramatic effect. Here’s a (link: http://developmunk.dk/slor/presskit.zip text: Press Kit).</p>
+
+----
+
+Tags: iOS,App
+
+----
+
+What-i-did: Design + coding + marketing

@@ -1,0 +1,21 @@
+Title: Be My Eyes
+
+----
+
+Year: 2014
+
+----
+
+Text: <p class="margin">(link: http://appstore.com/bemyeyes text: Be My Eyes) is an app that connects blind people with volunteer helpers from around the world via live video chat. I really enjoyed working on this app, making it accessible to the blind.</p>
+
+----
+
+Tags: iOS,App
+
+----
+
+What-i-did: Interface + coding
+
+----
+
+Excerpt: (link: http://appstore.com/bemyeyes text: Be My Eyes) is an app that connects blind people with volunteer helpers from around the world via live video chat. I really enjoyed working on this app, making it accessible to the blind.

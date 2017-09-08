@@ -6,14 +6,14 @@
   $link = isset($link) ? $white : true;
 
   if ($white) {
-      $fill = '#f3f1f1';
-      $start = '#f3f1f1';
-      $stop = '#f3f1f1';
+      $fill = '#fffdfd';
+      $start = '#fffdfd';
+      $stop = '#fffdfd';
       $id = 'WHITE_GRADIENT';
   } else {
-      $fill = '#231f20';
-      $start = '#e14b2b';
-      $stop = '#af3b25';
+      $fill = '#1A0006';
+      $start = '#E6290B';
+      $stop = '#CC1B00';
       $id = 'RED_GRADIENT';
   }
 
