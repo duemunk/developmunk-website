@@ -9,7 +9,7 @@
   )) ?>
   <?php snippet('slor-feature', array(
     'title'=>'Deep iOS Integration',
-    'description'=>'Photo Editing Extension to edit photos directly from Photos. Open original or edited photo and save as duplicate or a non-destructive modification.'
+    'description'=>'Photo Editing Extension to edit photos directly from Photos. Open original or edited photo and save as a non-destructive modification.'
   )) ?>
   <?php snippet('slor-feature', array(
     'title'=>'Saved Edits',
