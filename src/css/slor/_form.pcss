@@ -1,0 +1,144 @@
+@import './_settings.pcss';
+
+:root {
+  --range-thumb-size: 30px;
+  --range-thumb-max_size: 5vw;
+  --range-thumb-color: var(--color-primary);
+  --range-thumb-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  --range-track-size: 3px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  margin: calc(var(--padding-base) / -2);
+
+  input {
+    margin: calc(var(--padding-base) / 2);
+  }
+}
+
+input {
+  border: none;
+  border-radius: var(--border-radius);
+  padding: var(--padding-base) calc(var(--padding-base) * 1.5);
+  font-size: inherit;
+  font-weight: var(--font-weight-normal);
+  color: inherit;
+  background-color: var(--color-overlay);
+
+  &::placeholder {
+    font-weight: var(--font-weight-normal);
+    color: var(--color-secondary);
+    font-family: inherit;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &[type=submit] {
+    border: 2px solid var(--color-accent);
+    font-weight: var(--font-weight-strong);
+    color: var(--color-background);
+    background-color: var(--color-accent);
+    cursor: pointer;
+
+    &:hover:not(:focus) {
+      background-color: var(--color-background);
+      color: var(--color-accent);
+    }
+
+    &:focus {
+      box-shadow:
+        0 0 0 3px var(--color-background),
+        0 0 0 5px var(--color-accent);
+    }
+  }
+
+  &[type=text],
+  &[type=email] {
+    &:focus {
+      background-color: var(--color-overlay);
+      box-shadow:
+        0 0 0 3px var(--color-background),
+        0 0 0 5px var(--color-overlay);
+    }
+  }
+
+  &[type=range] {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: var(--range-thumb-size);
+    max-height: var(--range-thumb-max_size);
+    -webkit-appearance: none;
+    background: transparent;
+    border: 1px solid black; /* fix for FF unable to apply focus style bug */
+    cursor: pointer;
+
+    &::-ms-track {
+      width: 100%;
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: var(--range-thumb-size);
+      height: var(--range-thumb-size);
+      max-width: var(--range-thumb-max_size);
+      max-height: var(--range-thumb-max_size);
+      border-radius: 50%;
+      background: var(--range-thumb-color);
+      box-shadow: var(--range-thumb-shadow);
+      transform: translateY(-50%);
+    }
+
+    &::-moz-range-thumb {
+      width: var(--range-thumb-size);
+      height: var(--range-thumb-size);
+      max-width: var(--range-thumb-max_size);
+      max-height: var(--range-thumb-max_size);
+      border-radius: 50%;
+      background: var(--range-thumb-color);
+      box-shadow: var(--range-thumb-shadow);
+    }
+
+    &::-webkit-slider-runnable-track {
+      width: 100%;
+      height: var(--range-track-size);
+      background: var(--color-accent);
+      border-radius: calc(var(--range-track-size) / 2);
+    }
+
+    &::-moz-range-track {
+      width: 100%;
+      height: var(--range-track-size);
+      background: var(--color-accent);
+      border-radius: calc(var(--range-track-size) / 2);
+    }
+  }
+}
+
+@media (--medium-up) {
+  form {
+    flex-direction: row;
+    justify-content: center;
+
+    input {
+      &[type=submit] {
+        flex-basis: 200px;
+      }
+
+      &[type=email],
+      &[type=text] {
+        flex-basis: 200px;
+        max-width: 440px;
+        flex-grow: 1;
+      }
+    }
+  }
+}

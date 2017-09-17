@@ -1,0 +1,21 @@
+Title: Danske Love
+
+----
+
+Year: 2012
+
+----
+
+Tags: 
+
+----
+
+Text: <p class="margin">This (link: http://appstore.com/danskelove text:iPad+iPhone app) contains numerous danish laws for easy offline access. Quite a success with thousands of downloads and daily use by lawyers, police officers and students here in Denmark. My (link: http://larsenwork.com text: brother) and I made it for a lawyers company (link: http://www.adacta-law.dk text: Adacta Advokaterne).</p>
+
+----
+
+What-i-did: Design + coding
+
+----
+
+Excerpt: This (link: http://appstore.com/danskelove text:iPad+iPhone app) contains numerous danish laws for easy offline access. Quite a success with thousands of downloads and daily use by lawyers, police officers and students here in Denmark. My (link: http://larsenwork.com text: brother) and I made it for a lawyers company (link: http://www.adacta-law.dk text: Adacta Advokaterne).

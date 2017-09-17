@@ -2,10 +2,10 @@
 
 <header>
 
-  <? if($image = $page->images()->sortBy('sort', 'asc')->first()): ?>
+  <?php if($image = $page->images()->sortBy('sort', 'asc')->first()): ?>
   <div class="coverbackground fullwrapper headerimage" style="background: url(<?php echo $image->url() ?>);">
   </div>
-  <? endif; ?>
+  <?php endif; ?>
 
     <h1 class="margin"><a href="http://developmunk.dk/blog/developing-for-the-myo-alpha/" rel="bookmark"><?php echo $page->title()->html() ?></a></h1>
 </header>
@@ -14,9 +14,9 @@
   <article>
     <?php echo $page->text()->kirbytext() ?>
   </article>
-  <? snippet('follow') ?>
+  <?php snippet('follow') ?>
 </section>
 
-<? snippet('pagenavigation') ?>
+<?php snippet('pagenavigation') ?>
 
-<? snippet('footer') ?>
+<?php snippet('footer') ?>

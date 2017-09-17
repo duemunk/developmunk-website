@@ -1,0 +1,60 @@
+#app {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
+  margin: -var(--padding-large);
+
+  & > * {
+    padding: var(--padding-large);
+  }
+
+  @media (--medium-up) {
+    flex-direction: row;
+  }
+}
+
+.demo-headline {
+  flex-basis: 100%;
+  min-width: 100%;
+
+  @media (--large-up) {
+    min-width: unset;
+    flex-grow: 1;
+    flex-basis: 0;
+
+  }
+
+  @media (--medium-up) {
+    order: 0;
+  }
+}
+
+.demo-phone {
+  width: 100%;
+  min-width: 200px;
+  max-width: 70vw;
+  flex-basis: 423px;
+  perspective: 2000px;
+
+  @media (--medium-up) {
+    /* ViewportHeight / Ratio - app padding * 2 + body padding */
+    max-width: calc((100vh / var(--iphone-ratio)) + var(--padding-large) * 2 - var(--padding-xxlarge));
+    order: 1;
+  }
+}
+
+.demo-text {
+  min-width: 100%;
+
+  @media (--medium-up) {
+    min-width: unset;
+    flex-grow: 1;
+    flex-basis: 0;
+    order: 2;
+  }
+
+  & > div:first-child {
+    margin-bottom: var(--padding-large);
+  }
+}

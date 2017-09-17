@@ -1,0 +1,47 @@
+:root {
+  --logo-slor-ratio: calc(184 / 76);
+  --logo-appstore-ratio: calc(135 / 40);
+  --logo-height: calc(var(--baseline) * 4);
+  --logo-max_height: 12vw;
+}
+
+.logo-appstore,
+.logo-slor {
+  height: var(--logo-height);
+  max-height: var(--logo-max_height);
+}
+
+.logo-appstore {
+  width: calc(var(--logo-height) * var(--logo-appstore-ratio));
+  max-width: calc(var(--logo-max_height) * var(--logo-appstore-ratio));
+}
+
+.logo-slor {
+  width: calc(var(--logo-height) * var(--logo-slor-ratio));
+  max-width: calc(var(--logo-max_height) * var(--logo-slor-ratio));
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: var(--padding-xxlarge);
+
+  & a {
+    display: flex;
+  }
+
+  @media (--medium-up) {
+    margin-bottom: var(--padding-xxlarge);
+  }
+
+  @media (--large-up) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 0;
+    padding: var(--padding-xxlarge);
+  }
+}
+

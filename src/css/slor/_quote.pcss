@@ -1,0 +1,36 @@
+@import './_settings.pcss';
+
+.quotes {
+  justify-content: center
+}
+
+.quote {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+
+  p.quotation {
+    font-size: 70px;
+    margin-top: 10px;
+    margin-left: -4px;
+    margin-right: 4px;
+    flex-shrink: 0;
+    color: var(--color-primary);
+
+    flex-basis: 30px;
+
+    @media (--medium-up) {
+      flex-basis: 40px;
+    }
+  }
+
+  .text {
+    flex-grow: 1;
+  }
+
+  .author {
+    font-weight: var(--font-weight-strong);
+    text-align: right;
+    color: var(--color-primary);
+  }
+}
