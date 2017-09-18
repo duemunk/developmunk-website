@@ -32,9 +32,9 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 // Fix for slor being a projects, but links to /projects/slor should go to /slor
 c::set('routes', array(
   array(
-    'pattern' => '/projects/slor',
+    'pattern' => 'projects/slor',
     'action'  => function() {
-      return go('/slor');
+      return go('slor');
     }
   )
 ));
