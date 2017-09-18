@@ -38,3 +38,7 @@ c::set('routes', array(
     }
   )
 ));
+
+
+// Enable caching
+c::set('cache', true);
