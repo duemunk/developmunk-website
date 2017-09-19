@@ -21,10 +21,6 @@
 
       <div class="section-spacing"></div>
 
-      <?php snippet('slor-form') ?>
-
-      <!-- <div class="section-spacing"></div> -->
-
       <!-- <?php snippet('slor-quotes') ?> -->
 
       <div class="section-spacing"></div>
