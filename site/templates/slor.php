@@ -21,7 +21,7 @@
 
       <div class="section-spacing"></div>
 
-      <!-- <?php snippet('slor-quotes') ?> -->
+      <?php snippet('slor-quotes') ?>
 
       <div class="section-spacing"></div>
 
