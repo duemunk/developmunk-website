@@ -9,4 +9,9 @@
     'description'=>'The ability to edit focus points in portrait shots along with finetuning background blur just adds a whole new depth (pun intended) to editing.',
     'url'=>'https://www.producthunt.com/posts/slor#comment-522840'
   )) ?>
+  <?php snippet('slor-quote', array(
+    'author'=>'Nils Hayat',
+    'description'=>'This is basically Lytro’s product as an app!',
+    'url'=>'https://twitter.com/nilsou/status/910530397062127616'
+  )) ?>
 </div>
