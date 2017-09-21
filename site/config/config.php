@@ -40,5 +40,5 @@ c::set('routes', array(
 ));
 
 
-// Enable caching
-c::set('cache', true);
+// Disable caching
+c::set('cache', false);
