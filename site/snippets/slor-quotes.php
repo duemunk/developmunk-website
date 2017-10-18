@@ -10,8 +10,8 @@
     'url'=>'https://www.producthunt.com/posts/slor#comment-522840'
   )) ?>
   <?php snippet('slor-quote', array(
-    'author'=>'Nils Hayat',
-    'description'=>'This is basically Lytro’s product as an app!',
-    'url'=>'https://twitter.com/nilsou/status/910530397062127616'
+    'author'=>'Tages Anzeiger',
+    'description'=>'Mit dieser App macht das iPhone der Spiegelreflex Konkurrenz.',
+    'url'=>'https://mobile2.tagesanzeiger.ch/articles/59dde0cbab5c376c3a000001'
   )) ?>
 </div>
