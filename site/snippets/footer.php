@@ -21,6 +21,7 @@
   $footer2 .= '</ul>';
   $footer2 .= '</div>';
   $footer2 .= '</div>';
+  $footer2 .= js('assets/js/itunes_affiliate.js');
   $footer2 .= '</footer>';
   $footer2 .= '</div>';
   $footer2 .= '</div>';

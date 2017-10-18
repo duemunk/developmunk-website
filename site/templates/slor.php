@@ -43,6 +43,8 @@
       <?php snippet('slor-footer') ?>
 
       <div class="section-spacing"></div>
+
+      <?php echo js('assets/js/itunes_affiliate.js') ?>
     </footer>
   </body>
 </html>
